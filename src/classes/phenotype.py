@@ -9,6 +9,6 @@ class Phenotype:
 
         parts = {}
         for gene in library.values():
-            parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effects] = genotype.get_locus_value(gene.id)
+            parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effect] = genotype.get_locus_value(gene.id)
 
         return Phenotype(parts)

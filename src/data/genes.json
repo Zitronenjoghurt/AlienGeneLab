@@ -6,7 +6,7 @@
         "max": 255,
         "part": "skin",
         "type": "color",
-        "effects": "red",
+        "effect": "red",
         "code": "SR"
     },
     {
@@ -16,7 +16,7 @@
         "max": 255,
         "part": "skin",
         "type": "color",
-        "effects": "green",
+        "effect": "green",
         "code": "SG"
     },
     {
@@ -26,7 +26,7 @@
         "max": 255,
         "part": "skin",
         "type": "color",
-        "effects": "blue",
+        "effect": "blue",
         "code": "SB"
     }
 ]

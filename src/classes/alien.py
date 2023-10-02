@@ -19,9 +19,9 @@ class Alien:
         for part_name in parts:
             part_info = {}
             part = self.get_part(part_name)
-            for type in part:
-                value = part[type]
-                part_info[type] = self.handle_part_type(part, type, value)
+            for type_name in part:
+                value = part[type_name]
+                part_info[type_name] = self.handle_part_type(part_name, type_name, value)
             description[part_name] = part_info
 
         return description

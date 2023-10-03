@@ -9,10 +9,11 @@ class Genotype:
         self.loci = loci
 
     def generate_random(pure=True):
-        library = GeneLibrary().get_all_genes()
+        library = GeneLibrary.get_instance()
+        genes = library.get_all_genes()
 
         loci = {}
-        for id, gene in library.items():
+        for id, gene in genes.items():
             insert = choices([True, False], [GENE_INSERTION_CHANCE, 1 - GENE_INSERTION_CHANCE])[0]
             if insert:
                 loci[id] = Locus.generate_random(id, gene.min, gene.max, pure)

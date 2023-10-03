@@ -5,10 +5,11 @@ class Phenotype:
         self.parts = parts
 
     def generate_from_genotype(genotype):
-        library = GeneLibrary().get_all_genes()
+        library = GeneLibrary.get_instance()
+        genes = library.get_all_genes()
 
         parts = {}
-        for gene in library.values():
+        for gene in genes.values():
             value = genotype.get_locus_value(gene.id)
 
             if value is not None:

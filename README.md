@@ -8,7 +8,7 @@ e.g.: an alien has a locus for the red, green and blue part of the skin color. N
 
 The phenotype describes how the organism looks like. To determine the phenotype you analyze the genotype and summarize all effects of every locus. For the color property of a body part you would join the 3 loci (the red, green and blue parts) and translate them into a color. Internally the color will be approximated to the closest one of 135 preconfigured colors (look src/data/colors.json). Depending on the property of a body part, some loci will be analyzed differently to determine the end result.
 
-The nice thing is: you can just add the genes you want to an alien. No gene is actually mandatory and you can easily add your own ones (look src/data/genes.json). The only limitation is the amount of different types of genes which influence a body part property (since they have to be analyzed depending on the specific situation, like the color genes). You can add whatever body part genes you want and put them in an alien without having to change the python code.
+The nice thing is: you can just add the genes you want to an alien. No gene is actually mandatory and you can easily add your own ones (look src/data/genes.json). The only limitation is the amount of different body part properties genes can influence (since they have to be analyzed depending on the specific situation, like the color genes). You can add whatever body part genes you want and put them in an alien without having to change the python code.
 
 ------------------------
 

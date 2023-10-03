@@ -10,4 +10,4 @@ To customize global settings, changing the behaviour of the simulation.
 
 |Property|Type|Description|Default|Values|
 |---|---|---|---|---|
-|`gene_insertion_chance`|float|The chance for each existing gene being inserted into a randomly generated alien.|`0.5`|`0 - 1`|
+|`gene_insertion_chance`|float|The chance for each individual existing gene being inserted into a randomly generated alien.|`0.5`|`0 - 1`|

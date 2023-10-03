@@ -1,5 +1,8 @@
+from random import choices
 from .gene_library import GeneLibrary
 from .locus import Locus
+
+GENE_INSERTION_CHANCE = 0.5
 
 class Genotype:
     def __init__(self, loci={}) -> None:
@@ -10,7 +13,9 @@ class Genotype:
 
         loci = {}
         for id, gene in library.items():
-            loci[id] = Locus.generate_random(id, gene.min, gene.max, pure)
+            insert = choices([True, False], [GENE_INSERTION_CHANCE, 1 - GENE_INSERTION_CHANCE])[0]
+            if insert:
+                loci[id] = Locus.generate_random(id, gene.min, gene.max, pure)
         return Genotype(loci)
     
     def get_locus(self, id):

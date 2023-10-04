@@ -1,3 +1,5 @@
+# The haplotype is the genotype split in half.
+# Two haplotypes can be fused back to a genotype.
 class Haplotype:
     def __init__(self, alleles = {}) -> None:
         self.alleles = alleles

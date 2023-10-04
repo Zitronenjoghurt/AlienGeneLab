@@ -1,3 +1,4 @@
+# This is a gene entry how its found in the gene library (genes.json).
 class Gene:
     def __init__(self, id, description, min, max, part, type, effect, code) -> None:
         self.id = id

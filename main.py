@@ -8,4 +8,6 @@ if __name__ == "__main__":
 
     print(alien1.get_full_info())
     print(alien2.get_full_info())
+
+    print(Alien.from_genetic_code('HGUIZNGIUXZAFTZXSNFITZCDFNUZTCFNZUAFTNFNTICIFNTAIFTNSCINFTDNTIFASITFUMGITMCJFGUAMTIGSMTGICTMGIDTNAGIMTIUSCIBGIGATUBIVFGTUNTVJATNGFBSTSNFCUTZABGFCZTNV').get_full_info())
     t = 1

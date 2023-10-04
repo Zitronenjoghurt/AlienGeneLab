@@ -133,5 +133,17 @@
     "#778899": "lightslategray",
     "#708090": "slategray",
     "#2F4F4F": "darkslategray",
-    "#000000": "black"
+    "#000000": "black",
+    "#00578E": "oceandeep",
+    "#002A10": "forestshade",
+    "#FFAD33": "sunrise",
+    "#FF6600": "warningorange",
+    "#33B5E5": "infoblue",
+    "#E50000": "alertred",
+    "#FFCCCB": "pastelpink",
+    "#CCFFCC": "pastelgreen",
+    "#CCCCFF": "pastelblue",
+    "#9B111E": "rubyred",
+    "#0D387D": "sapphireblue",
+    "#50C878": "emeraldgreen"
 }

@@ -24,3 +24,11 @@ class GeneLibrary:
 
     def get_all_genes(self):
         return self.library
+    
+    def get_all_developing_genes(self):
+        filtered_library = {id: gene for id, gene in self.library.items() if gene.type == 'develop'}
+        return filtered_library
+    
+    def get_all_non_developing_genes(self):
+        filtered_library = {id: gene for id, gene in self.library.items() if gene.type != 'develop'}
+        return filtered_library

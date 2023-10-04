@@ -1,6 +1,16 @@
 [
     {
         "id": 1,
+        "description": "Decides if the alien develops skin.",
+        "min": 0,
+        "max": 1,
+        "part": "skin",
+        "type": "develop",
+        "effect": "",
+        "code": "SK"
+    },
+    {
+        "id": 2,
         "description": "The red part of the skin color.",
         "min": 0,
         "max": 255,
@@ -10,7 +20,7 @@
         "code": "SR"
     },
     {
-        "id": 2,
+        "id": 3,
         "description": "The green part of the skin color.",
         "min": 0,
         "max": 255,
@@ -20,7 +30,7 @@
         "code": "SG"
     },
     {
-        "id": 3,
+        "id": 4,
         "description": "The blue part of the skin color.",
         "min": 0,
         "max": 255,

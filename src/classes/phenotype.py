@@ -6,11 +6,16 @@ class Phenotype:
 
     def generate_from_genotype(genotype):
         library = GeneLibrary.get_instance()
-        genes = library.get_all_genes()
 
         parts = {}
-        for gene in genes.values():
-            parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effect] = genotype.get_locus_value(gene.id)
+        for gene in library.get_all_developing_genes().values():
+            if genotype.get_locus(gene.id) is not None:
+                parts[gene.part] = {}
+
+        existing_parts = list(parts.keys())
+        for gene in library.get_all_non_developing_genes().values():
+            if gene.part in existing_parts:
+                parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effect] = genotype.get_locus_value(gene.id)
 
         return Phenotype(parts)
     

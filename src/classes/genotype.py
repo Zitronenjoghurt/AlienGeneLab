@@ -52,7 +52,7 @@ class Genotype:
         locus = self.get_locus(id)
 
         if not locus:
-            return None
+            return 0
         
         return locus.get_dominant_value()
     

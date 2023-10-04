@@ -10,10 +10,7 @@ class Phenotype:
 
         parts = {}
         for gene in genes.values():
-            value = genotype.get_locus_value(gene.id)
-
-            if value is not None:
-                parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effect] = genotype.get_locus_value(gene.id)
+            parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effect] = genotype.get_locus_value(gene.id)
 
         return Phenotype(parts)
     

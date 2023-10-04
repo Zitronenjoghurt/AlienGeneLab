@@ -25,6 +25,12 @@ class Alien:
         genotype = Genotype.generate_from_haplotypes(ht1, ht2)
         return Alien(genotype)
     
+    def breed_multiple(self, partner_alien, amount):
+        aliens = []
+        for _ in range(amount):
+            aliens.append(self.breed(partner_alien))
+        return aliens
+    
     # Generates a description dictionary which is a representation of the aliens phenotype, just easier to read.
     def get_description(self) -> dict:
         parts = list(self.get_parts().keys())

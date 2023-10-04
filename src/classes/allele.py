@@ -29,3 +29,6 @@ class Allele:
     
     def get_sequence(self):
         return [self.value, self.id]
+    
+    def to_dict(self):
+        return {"id": self.id, "value": self.value}

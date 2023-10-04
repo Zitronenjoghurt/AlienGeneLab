@@ -46,3 +46,6 @@ class Locus:
     
     def get_id(self):
         return self.first.get_id()
+    
+    def to_dict(self):
+        return {"1": self.first.to_dict(), "2": self.second.to_dict()}

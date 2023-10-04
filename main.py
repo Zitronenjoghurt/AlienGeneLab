@@ -6,8 +6,6 @@ if __name__ == "__main__":
     code = alien1.get_genetic_code()
     alien2 = Alien.from_genetic_code(code)
 
-    print(alien1.get_description())
-    print(alien1.get_genetic_code())
-    print(alien2.get_description())
-    print(alien2.get_genetic_code())
+    print(alien1.get_full_info())
+    print(alien2.get_full_info())
     t = 1

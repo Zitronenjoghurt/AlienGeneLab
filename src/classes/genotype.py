@@ -80,6 +80,12 @@ class Genotype:
         sequence = self.get_sequence()
 
         return encode(sequence)
+    
+    def to_dict(self):
+        result = {}
+        for id, locus in self.loci.items():
+            result[str(id)] = locus.to_dict()
+        return result
 
     def get_locus(self, id):
         return self.loci.get(id, None)

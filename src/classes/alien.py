@@ -40,7 +40,7 @@ class Alien:
     
     # Generates a description dictionary which is a representation of the aliens phenotype, just easier to read.
     def get_description(self) -> dict:
-        parts = list(self.get_parts().keys())
+        parts = list(self.get_phenotype_dict().keys())
 
         description = {}
 
@@ -56,8 +56,20 @@ class Alien:
 
         return description
 
-    def get_parts(self) -> dict:
+    def get_phenotype_dict(self) -> dict:
         return self.phenotype.get_parts()
+    
+    def get_genotype_dict(self) -> dict:
+        return self.genotype.to_dict()
+    
+    def get_full_info(self) -> dict:
+        info = {
+            "genetic_code": self.get_genetic_code(),
+            "genotype": self.get_genotype_dict(),
+            "phenotype": self.get_phenotype_dict(),
+            "description": self.get_description()
+        }
+        return info
     
     def get_part(self, part) -> dict:
         return self.phenotype.get_part(part)

@@ -21,6 +21,9 @@ class GeneLibrary:
         if GeneLibrary.__instance is None:
             GeneLibrary.__instance = GeneLibrary()
         return GeneLibrary.__instance
+    
+    def get_gene(self, id):
+        return self.library.get(id, None)
 
     def get_all_genes(self):
         return self.library
@@ -32,3 +35,6 @@ class GeneLibrary:
     def get_all_non_developing_genes(self):
         filtered_library = {id: gene for id, gene in self.library.items() if gene.type != 'develop'}
         return filtered_library
+    
+    def get_max_id(self):
+        return len(self.library)

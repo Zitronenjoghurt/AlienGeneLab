@@ -22,6 +22,8 @@ class Locus:
         return Locus(first_allele, second_allele)
     
     def from_sequence(sequence):
+        if sequence[3] != sequence[1]:
+            sequence[3] = sequence[1]
         first = Allele.from_sequence([sequence[0], sequence[1]])
         second = Allele.from_sequence([sequence[2], sequence[3]])
 

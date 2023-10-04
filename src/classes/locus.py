@@ -1,5 +1,5 @@
 from copy import deepcopy
-from random import randint
+from random import randint, choice
 
 from .allele import Allele
 
@@ -22,3 +22,6 @@ class Locus:
         second_value = self.second.get_value()
 
         return max(first_value, second_value)
+    
+    def get_random_allele(self):
+        return choice([self.first, self.second])

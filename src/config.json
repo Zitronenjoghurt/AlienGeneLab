@@ -1,3 +1,5 @@
 {
+    "duplicate_differing_alleles": true,
+    "duplicate_differing_alleles_chance": 0.5,
     "gene_insertion_chance": 0.5
 }

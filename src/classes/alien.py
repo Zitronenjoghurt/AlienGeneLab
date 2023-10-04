@@ -12,6 +12,13 @@ class Alien:
         genotype = Genotype.generate_random(pure)
         return Alien(genotype)
     
+    def breed(self, partner_alien):
+        ht1 = self.get_random_haplotype()
+        ht2 = partner_alien.get_random_haplotype()
+
+        genotype = Genotype.generate_from_haplotypes(ht1, ht2)
+        return Alien(genotype)
+    
     def get_description(self) -> dict:
         parts = list(self.get_parts().keys())
 
@@ -31,3 +38,6 @@ class Alien:
     
     def get_part(self, part) -> dict:
         return self.phenotype.get_part(part)
+    
+    def get_random_haplotype(self):
+        return self.genotype.get_random_haplotype()

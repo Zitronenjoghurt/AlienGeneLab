@@ -4,6 +4,8 @@ from .gene_library import GeneLibrary
 from .haplotype import Haplotype
 from .locus import Locus
 
+from ..modules.genetic_code import decode, encode
+
 # The genotype of an alien is made up of multiple loci,
 # where each locus decides a different property of a body part.
 class Genotype:
@@ -56,6 +58,25 @@ class Genotype:
 
         return Genotype(loci)
     
+    def from_sequence(sequence):
+        loci = {}
+        for i in range(0, len(sequence), 4):
+            locus = Locus.from_sequence(sequence[i:i+4])
+            id = locus.get_id()
+            loci[id] = locus
+
+        return Genotype(loci)
+
+    def from_genetic_code(code):
+        sequence = decode(code)
+
+        return Genotype.from_sequence(sequence)
+
+    def to_genetic_code(self):
+        sequence = self.get_sequence()
+
+        return encode(sequence)
+
     def get_locus(self, id):
         return self.loci.get(id, None)
 
@@ -75,3 +96,11 @@ class Genotype:
             alleles[id] = locus.get_random_allele()
 
         return Haplotype(alleles)
+    
+    def get_sequence(self):
+        sequence = []
+
+        for locus in self.loci.values():
+            sequence.extend(locus.get_sequence())
+
+        return sequence

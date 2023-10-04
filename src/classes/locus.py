@@ -21,6 +21,12 @@ class Locus:
         
         return Locus(first_allele, second_allele)
     
+    def from_sequence(sequence):
+        first = Allele.from_sequence([sequence[0], sequence[1]])
+        second = Allele.from_sequence([sequence[2], sequence[3]])
+
+        return Locus(first, second)
+    
     def get_dominant_value(self):
         first_value = self.first.get_value()
         second_value = self.second.get_value()
@@ -29,3 +35,12 @@ class Locus:
     
     def get_random_allele(self):
         return choice([self.first, self.second])
+    
+    def get_sequence(self):
+        first = self.first.get_sequence()
+        second = self.second.get_sequence()
+
+        return first + second
+    
+    def get_id(self):
+        return self.first.get_id()

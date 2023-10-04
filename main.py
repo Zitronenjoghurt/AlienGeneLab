@@ -3,7 +3,11 @@ from src.classes.alien import Alien
 
 if __name__ == "__main__":
     alien1 = Alien.generate_random()
-    alien2 = Alien.generate_random()
-    babus = alien1.breed_multiple(alien2, 10)
-    desc = [babu.get_description() for babu in babus]
+    code = alien1.get_genetic_code()
+    alien2 = Alien.from_genetic_code(code)
+
+    print(alien1.get_description())
+    print(alien1.get_genetic_code())
+    print(alien2.get_description())
+    print(alien2.get_genetic_code())
     t = 1

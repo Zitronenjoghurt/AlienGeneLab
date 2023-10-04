@@ -3,7 +3,7 @@
         "id": 1,
         "description": "Decides if the alien develops skin.",
         "min": 0,
-        "max": 1,
+        "max": 0,
         "part": "skin",
         "type": "develop",
         "effect": "",

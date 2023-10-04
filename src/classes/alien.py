@@ -17,6 +17,13 @@ class Alien:
         genotype = Genotype.generate_random(pure)
         return Alien(genotype)
     
+    def from_genetic_code(code):
+        genotype = Genotype.from_genetic_code(code)
+        return Alien(genotype)
+
+    def get_genetic_code(self):
+        return self.genotype.to_genetic_code()
+    
     # Breed this alien with another to create an offspring.
     def breed(self, partner_alien):
         ht1 = self.get_random_haplotype()

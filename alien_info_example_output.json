@@ -1,35 +1,153 @@
 {
-    "genetic_code": "AAAAAAAGAAAAAAAGGCATAAACGCATAAACACAGAAATACAGAAATTTAAAAGATTAAAAGA",
+    "genetic_code": "AAAAAAAGAAAAAAAGAAAAAAATAAAAAAATCGGAAAGACGGAAAGAAAAAAAGGAAAAAAGGACCAAAGCACCAAAGCTTGCAAGTTTGCAAGTTTCTAATATTCTAATATTTGAATTTTTGAATTAAGTAGAAAAGTAGAATTATAGATTTATAGATCACGAGGACACGAGGA",
     "genotype": {
         "1": {
-            "1": {"id": 1, "value": 0},
-            "2": {"id": 1, "value": 0}
-        },
-        "2": {
-            "1": {"id": 2, "value": 99},
-            "2": {"id": 2, "value": 99}
+            "1": {
+                "id": 1,
+                "value": 0
+            },
+            "2": {
+                "id": 1,
+                "value": 0
+            }
         },
         "3": {
-            "1": {"id": 3, "value": 33},
-            "2": {"id": 3, "value": 33}
+            "1": {
+                "id": 3,
+                "value": 0
+            },
+            "2": {
+                "id": 3,
+                "value": 0
+            }
         },
         "4": {
-            "1": {"id": 4, "value": 240},
-            "2": {"id": 4, "value": 240}
+            "1": {
+                "id": 4,
+                "value": 148
+            },
+            "2": {
+                "id": 4,
+                "value": 148
+            }
+        },
+        "5": {
+            "1": {
+                "id": 5,
+                "value": 0
+            },
+            "2": {
+                "id": 5,
+                "value": 0
+            }
+        },
+        "6": {
+            "1": {
+                "id": 6,
+                "value": 40
+            },
+            "2": {
+                "id": 6,
+                "value": 40
+            }
+        },
+        "7": {
+            "1": {
+                "id": 7,
+                "value": 246
+            },
+            "2": {
+                "id": 7,
+                "value": 246
+            }
+        },
+        "12": {
+            "1": {
+                "id": 12,
+                "value": 251
+            },
+            "2": {
+                "id": 12,
+                "value": 251
+            }
+        },
+        "15": {
+            "1": {
+                "id": 15,
+                "value": 253
+            },
+            "2": {
+                "id": 15,
+                "value": 253
+            }
+        },
+        "16": {
+            "1": {
+                "id": 16,
+                "value": 7
+            },
+            "2": {
+                "id": 16,
+                "value": 7
+            }
+        },
+        "19": {
+            "1": {
+                "id": 19,
+                "value": 243
+            },
+            "2": {
+                "id": 19,
+                "value": 243
+            }
+        },
+        "20": {
+            "1": {
+                "id": 20,
+                "value": 137
+            },
+            "2": {
+                "id": 20,
+                "value": 137
+            }
         }
     },
     "phenotype": {
         "skin": {
             "color": {
-                "red": 99,
-                "green": 33,
-                "blue": 240
+                "red": 0,
+                "green": 0,
+                "blue": 148
+            }
+        },
+        "brain": {
+            "personality_depth": {
+                "depth": 40
+            },
+            "personality": {
+                "cool": 0,
+                "naive": 0,
+                "confident": 0,
+                "shy": 0,
+                "playful": 251,
+                "serious": 0,
+                "stubborn": 0,
+                "loyal": 253,
+                "humble": 7,
+                "ambitious": 0,
+                "greedy": 0,
+                "lazy": 243,
+                "eccentric": 137
             }
         }
     },
     "description": {
         "skin": {
-            "color": "blueviolet"
+            "color": "navy"
+        },
+        "brain": {
+            "personality_depth": 40,
+            "personality": "loyal, playful"
         }
     }
 }

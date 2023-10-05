@@ -22,3 +22,4 @@ To customize global settings, changing the behaviour of the simulation.
 |`gene_insertion_chance`|float|The chance for each individual existing gene being inserted into a randomly generated alien.|`0.5`|`0 - 1`|
 |`duplicate_differing_alleles`|bool|Enable if alleles should be duplicated if only one of the bred aliens has a certain gene.|`true`||
 |`duplicate_differing_alleles_chance`|float|The chance of alleles being duplicated if only one of the bred aliens has a certain gene. Higher values might turn the outcome crazy if the parent aliens are very different.|`0.5`|`0 - 1`|
+|`personality_expression`|dict|Which personality depth equals which amount of maximum expressed personalities in an alien. {"40": 1, "80":2} means that if the personality depth is ≥ 40, it expresses up to 1 personality and ≥ 80 expresses 2 personalities.|`{"20": 1, "40": 2, "60": 3, "80": 4, "100": 5}`||

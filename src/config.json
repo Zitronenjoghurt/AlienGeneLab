@@ -1,5 +1,6 @@
 {
     "duplicate_differing_alleles": true,
     "duplicate_differing_alleles_chance": 0.5,
-    "gene_insertion_chance": 0.5
+    "gene_insertion_chance": 0.5,
+    "personality_expression": {"20": 1, "40": 2, "60": 3, "80": 4, "100": 5}
 }

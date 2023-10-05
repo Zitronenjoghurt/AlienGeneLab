@@ -23,3 +23,7 @@ class Config:
 
     def get_setting(self, setting):
         return self.settings[setting]
+    
+    def get_personality_expression(self):
+        setting = self.get_setting('personality_expression')
+        return {int(key): int(value) for key, value in setting.items()}

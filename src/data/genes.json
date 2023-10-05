@@ -38,5 +38,165 @@
         "type": "color",
         "effect": "blue",
         "code": "SB"
+    },
+    {
+        "id": 5,
+        "description": "Decides if the alien develops a brain.",
+        "min": 0,
+        "max": 0,
+        "part": "brain",
+        "type": "develop",
+        "effect": "",
+        "code": "BR"
+    },
+    {
+        "id": 6,
+        "description": "Decides how deep of a personality development the brain of the alien allows.",
+        "min": 0,
+        "max": 100,
+        "part": "brain",
+        "type": "personality_depth",
+        "effect": "depth",
+        "code": "PD"
+    },
+    {
+        "id": 7,
+        "description": "Decides if the brain could develop the personality: cool.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "cool",
+        "code": "PERS_CO"
+    },
+    {
+        "id": 8,
+        "description": "Decides if the brain could develop the personality: sassy.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "cool",
+        "code": "PERS_SA"
+    },
+    {
+        "id": 9,
+        "description": "Decides if the brain could develop the personality: naive.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "naive",
+        "code": "PERS_NA"
+    },
+    {
+        "id": 10,
+        "description": "Decides if the brain could develop the personality: confident.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "confident",
+        "code": "PERS_CF"
+    },
+    {
+        "id": 11,
+        "description": "Decides if the brain could develop the personality: shy.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "shy",
+        "code": "PERS_SH"
+    },
+    {
+        "id": 12,
+        "description": "Decides if the brain could develop the personality: playful.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "playful",
+        "code": "PERS_PL"
+    },
+    {
+        "id": 13,
+        "description": "Decides if the brain could develop the personality: serious.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "serious",
+        "code": "PERS_SE"
+    },
+    {
+        "id": 14,
+        "description": "Decides if the brain could develop the personality: stubborn.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "stubborn",
+        "code": "PERS_ST"
+    },
+    {
+        "id": 15,
+        "description": "Decides if the brain could develop the personality: loyal.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "loyal",
+        "code": "PERS_LO"
+    },
+    {
+        "id": 16,
+        "description": "Decides if the brain could develop the personality: humble.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "humble",
+        "code": "PERS_HU"
+    },
+    {
+        "id": 17,
+        "description": "Decides if the brain could develop the personality: ambitious.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "ambitious",
+        "code": "PERS_AM"
+    },
+    {
+        "id": 18,
+        "description": "Decides if the brain could develop the personality: greedy.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "greedy",
+        "code": "PERS_GR"
+    },
+    {
+        "id": 19,
+        "description": "Decides if the brain could develop the personality: lazy.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "lazy",
+        "code": "PERS_LA"
+    },
+    {
+        "id": 20,
+        "description": "Decides if the brain could develop the personality: eccentric.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "eccentric",
+        "code": "PERS_EC"
     }
 ]

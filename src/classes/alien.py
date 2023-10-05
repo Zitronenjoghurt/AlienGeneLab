@@ -51,7 +51,7 @@ class Alien:
             # Depending on the type of the property, different information will be added to the description.
             for type_name in part:
                 value = part[type_name]
-                part_info[type_name] = handle_part_type(part_name, type_name, value)
+                part_info[type_name] = handle_part_type(part, type_name, value)
             description[part_name] = part_info
 
         return description

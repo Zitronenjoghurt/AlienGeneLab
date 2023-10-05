@@ -198,5 +198,105 @@
         "type": "personality",
         "effect": "eccentric",
         "code": "PERS_EC"
+    },
+    {
+        "id": 21,
+        "description": "Decides if the brain could develop the personality: assertive.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "assertive",
+        "code": "PERS_AS"
+    },
+    {
+        "id": 22,
+        "description": "Decides if the brain could develop the personality: passive.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "passive",
+        "code": "PERS_PA"
+    },
+    {
+        "id": 23,
+        "description": "Decides if the brain could develop the personality: passive.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "passive",
+        "code": "PERS_PA"
+    },
+    {
+        "id": 24,
+        "description": "Decides if the brain could develop the personality: apathetic.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "apathetic",
+        "code": "PERS_AP"
+    },
+    {
+        "id": 25,
+        "description": "Decides if the brain could develop the personality: impulsive.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "impulsive",
+        "code": "PERS_IM"
+    },
+    {
+        "id": 26,
+        "description": "Decides if the brain could develop the personality: skeptical.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "skeptical",
+        "code": "PERS_SK"
+    },
+    {
+        "id": 27,
+        "description": "Decides if the brain could develop the personality: trusting.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "trusting",
+        "code": "PERS_TR"
+    },
+    {
+        "id": 28,
+        "description": "Decides if the brain could develop the personality: dreamy.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "dreamy",
+        "code": "PERS_DR"
+    },
+    {
+        "id": 29,
+        "description": "Decides if the brain could develop the personality: spontaneous.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "spontaneous",
+        "code": "PERS_SP"
+    },
+    {
+        "id": 30,
+        "description": "Decides if the brain could develop the personality: gregarious.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "personality",
+        "effect": "gregarious",
+        "code": "PERS_GG"
     }
 ]

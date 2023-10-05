@@ -3,7 +3,7 @@ from src.classes.config import Config
 def test_config():
     config = Config.get_instance()
 
-    assert config.get_setting("gene_insertion_chance") == 0.5
+    assert config.get_setting("gene_insertion_chance") == 0.33
 
 def test_get_personality_expression():
     config = Config.get_instance()

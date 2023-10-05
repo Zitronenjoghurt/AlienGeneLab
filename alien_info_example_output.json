@@ -137,7 +137,16 @@
                 "ambitious": 0,
                 "greedy": 0,
                 "lazy": 243,
-                "eccentric": 137
+                "eccentric": 137,
+                "assertive": 0,
+                "passive": 0,
+                "apathetic": 0,
+                "impulsive": 0,
+                "skeptical": 0,
+                "trusting": 0,
+                "dreamy": 0,
+                "spontaneous": 0,
+                "gregarious": 0
             }
         }
     },

@@ -14,8 +14,12 @@ class Phenotype:
         # Iterate all developing genes found in the library and check if they exist in the current genotype.
         # Developing genes decide if a certain part is developed in the alien.
         for gene in library.get_all_developing_genes().values():
-            if genotype.get_locus(gene.id) is not None:
+            locus = genotype.get_locus(gene.id)
+            if locus is not None:
                 parts[gene.part] = {}
+                if len(gene.effect) != 0:
+                    parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effect] = locus.get_dominant_value()
+
 
         # Iterate all non-developing genes found in the library and check if they exist in the current genotype.
         # If a certain part is influenced but the developing gene of that part does not exist in the genotype

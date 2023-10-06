@@ -6,7 +6,7 @@
         "part": "skin",
         "type": "develop",
         "effect": "",
-        "code": "SK"
+        "code": "SKN"
     },
     {
         "description": "The red part of the skin color.",
@@ -15,7 +15,7 @@
         "part": "skin",
         "type": "color",
         "effect": "red",
-        "code": "SR"
+        "code": "SKNR"
     },
     {
         "description": "The green part of the skin color.",
@@ -24,7 +24,7 @@
         "part": "skin",
         "type": "color",
         "effect": "green",
-        "code": "SG"
+        "code": "SKNG"
     },
     {
         "description": "The blue part of the skin color.",
@@ -33,7 +33,7 @@
         "part": "skin",
         "type": "color",
         "effect": "blue",
-        "code": "SB"
+        "code": "SKNB"
     },
     {
         "description": "Decides if the alien develops a brain.",
@@ -42,7 +42,7 @@
         "part": "brain",
         "type": "develop",
         "effect": "",
-        "code": "BR"
+        "code": "BRN"
     },
     {
         "description": "Decides how deep of a personality development the brain of the alien allows.",
@@ -51,7 +51,7 @@
         "part": "brain",
         "type": "personality_depth",
         "effect": "depth",
-        "code": "PD"
+        "code": "PRD"
     },
     {
         "description": "Decides if the brain could develop the personality: cool.",
@@ -268,5 +268,14 @@
         "type": "personality",
         "effect": "gregarious",
         "code": "PERS_GG"
+    },
+    {
+        "description": "Decides if the alien develops limbs.",
+        "min": 1,
+        "max": 10,
+        "part": "limb",
+        "type": "develop",
+        "effect": "amount",
+        "code": "LMB"
     }
 ]

@@ -9,6 +9,8 @@ def handle_part_type(part, type_name, value) -> str:
             return handle_personality(part, value)
         case 'personality_depth':
             return value['depth']
+        case 'develop':
+            return list(value.values())[0]
     
     return None
 

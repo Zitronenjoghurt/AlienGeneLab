@@ -1,3 +1,4 @@
+import json
 from ..modules.part_type_handler import handle_part_type
 
 from .genotype import Genotype
@@ -11,6 +12,11 @@ class Alien:
     def __init__(self, genotype) -> None:
         self.genotype = genotype
         self.phenotype = Phenotype.generate_from_genotype(genotype)
+
+    def export_to_json(self, filename: str):
+        full_info = self.get_full_info()
+        with open(filename, 'w') as json_file:
+            json.dump(full_info, json_file, indent=4)
 
     # Generates a random alien.
     # pure => if true, the alien genotype will only have loci with 2 of the same alleles

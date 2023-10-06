@@ -50,7 +50,7 @@
         "max": 100,
         "part": "brain",
         "type": "personality_depth",
-        "effect": "depth",
+        "effect": "value",
         "code": "PRD"
     },
     {

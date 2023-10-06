@@ -25,7 +25,7 @@ class Genotype:
         for id, gene in genes.items():
             insertion_chance = config.get_setting("gene_insertion_chance")
             insert = choices([True, False], [insertion_chance, 1 - insertion_chance])[0]
-            if insert:
+            if insert or gene.mandatory:
                 loci[id] = Locus.generate_random(id, gene.min, gene.max, pure)
         return Genotype(loci)
     

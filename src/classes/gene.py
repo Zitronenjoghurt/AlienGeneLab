@@ -1,6 +1,6 @@
 # This is a gene entry how its found in the gene library (genes.json).
 class Gene:
-    def __init__(self, id, description, min, max, part, type, effect, code) -> None:
+    def __init__(self, id, description, min, max, part, type, effect, code, mandatory) -> None:
         self.id = id
         self.description = description
         self.min = min
@@ -9,6 +9,7 @@ class Gene:
         self.type = type
         self.effect = effect
         self.code = code
+        self.mandatory = mandatory
 
     def from_dict(id, data):
         return Gene(
@@ -19,5 +20,6 @@ class Gene:
             part=data['part'],
             type=data['type'],
             effect=data['effect'],
-            code=data['code']
+            code=data['code'],
+            mandatory=data['mandatory']
         )

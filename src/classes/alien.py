@@ -1,5 +1,5 @@
 import json
-from ..modules.part_type_handler import handle_part_type
+from ..modules.part_type_handler import handle_part_type, extract_first_key, extract_first_value
 
 from .genotype import Genotype
 from .phenotype import Phenotype
@@ -58,7 +58,10 @@ class Alien:
             # Depending on the type of the property, different information will be added to the description.
             for type_name in part:
                 value = part[type_name]
-                part_info[type_name] = handle_part_type(part, type_name, value)
+                if type_name == 'develop':
+                    part_info[extract_first_key(value)] = extract_first_value(value)
+                else:
+                    part_info[type_name] = handle_part_type(part, type_name, value)
             description[part_name] = part_info
 
         return description

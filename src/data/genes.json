@@ -1,12 +1,23 @@
 [
     {
+        "description": "Decides the size of the alien.",
+        "min": 0,
+        "max": 255,
+        "part": "body",
+        "type": "develop",
+        "effect": "size",
+        "code": "BDY",
+        "mandatory": true
+    },
+    {
         "description": "Decides if the alien develops skin.",
         "min": 0,
         "max": 0,
         "part": "skin",
         "type": "develop",
         "effect": "",
-        "code": "SKN"
+        "code": "SKN",
+        "mandatory": false
     },
     {
         "description": "The red part of the skin color.",
@@ -15,7 +26,8 @@
         "part": "skin",
         "type": "color",
         "effect": "red",
-        "code": "SKNR"
+        "code": "SKNR",
+        "mandatory": false
     },
     {
         "description": "The green part of the skin color.",
@@ -24,7 +36,8 @@
         "part": "skin",
         "type": "color",
         "effect": "green",
-        "code": "SKNG"
+        "code": "SKNG",
+        "mandatory": false
     },
     {
         "description": "The blue part of the skin color.",
@@ -33,7 +46,8 @@
         "part": "skin",
         "type": "color",
         "effect": "blue",
-        "code": "SKNB"
+        "code": "SKNB",
+        "mandatory": false
     },
     {
         "description": "Decides if the alien develops a brain.",
@@ -42,7 +56,8 @@
         "part": "brain",
         "type": "develop",
         "effect": "",
-        "code": "BRN"
+        "code": "BRN",
+        "mandatory": false
     },
     {
         "description": "Decides how deep of a personality development the brain of the alien allows.",
@@ -51,7 +66,8 @@
         "part": "brain",
         "type": "personality_depth",
         "effect": "value",
-        "code": "PRD"
+        "code": "PRD",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: cool.",
@@ -60,7 +76,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "cool",
-        "code": "PERS_CO"
+        "code": "PERS_CO",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: sassy.",
@@ -69,7 +86,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "cool",
-        "code": "PERS_SA"
+        "code": "PERS_SA",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: naive.",
@@ -78,7 +96,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "naive",
-        "code": "PERS_NA"
+        "code": "PERS_NA",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: confident.",
@@ -87,7 +106,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "confident",
-        "code": "PERS_CF"
+        "code": "PERS_CF",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: shy.",
@@ -96,7 +116,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "shy",
-        "code": "PERS_SH"
+        "code": "PERS_SH",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: playful.",
@@ -105,7 +126,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "playful",
-        "code": "PERS_PL"
+        "code": "PERS_PL",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: serious.",
@@ -114,7 +136,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "serious",
-        "code": "PERS_SE"
+        "code": "PERS_SE",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: stubborn.",
@@ -123,7 +146,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "stubborn",
-        "code": "PERS_ST"
+        "code": "PERS_ST",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: loyal.",
@@ -132,7 +156,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "loyal",
-        "code": "PERS_LO"
+        "code": "PERS_LO",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: humble.",
@@ -141,7 +166,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "humble",
-        "code": "PERS_HU"
+        "code": "PERS_HU",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: ambitious.",
@@ -150,7 +176,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "ambitious",
-        "code": "PERS_AM"
+        "code": "PERS_AM",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: greedy.",
@@ -159,7 +186,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "greedy",
-        "code": "PERS_GR"
+        "code": "PERS_GR",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: lazy.",
@@ -168,7 +196,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "lazy",
-        "code": "PERS_LA"
+        "code": "PERS_LA",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: eccentric.",
@@ -177,7 +206,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "eccentric",
-        "code": "PERS_EC"
+        "code": "PERS_EC",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: assertive.",
@@ -186,7 +216,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "assertive",
-        "code": "PERS_AS"
+        "code": "PERS_AS",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: passive.",
@@ -195,7 +226,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "passive",
-        "code": "PERS_PA"
+        "code": "PERS_PA",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: passive.",
@@ -204,7 +236,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "passive",
-        "code": "PERS_PA"
+        "code": "PERS_PA",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: apathetic.",
@@ -213,7 +246,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "apathetic",
-        "code": "PERS_AP"
+        "code": "PERS_AP",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: impulsive.",
@@ -222,7 +256,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "impulsive",
-        "code": "PERS_IM"
+        "code": "PERS_IM",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: skeptical.",
@@ -231,7 +266,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "skeptical",
-        "code": "PERS_SK"
+        "code": "PERS_SK",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: trusting.",
@@ -240,7 +276,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "trusting",
-        "code": "PERS_TR"
+        "code": "PERS_TR",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: dreamy.",
@@ -249,7 +286,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "dreamy",
-        "code": "PERS_DR"
+        "code": "PERS_DR",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: spontaneous.",
@@ -258,7 +296,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "spontaneous",
-        "code": "PERS_SP"
+        "code": "PERS_SP",
+        "mandatory": false
     },
     {
         "description": "Decides if the brain could develop the personality: gregarious.",
@@ -267,7 +306,8 @@
         "part": "brain",
         "type": "personality",
         "effect": "gregarious",
-        "code": "PERS_GG"
+        "code": "PERS_GG",
+        "mandatory": false
     },
     {
         "description": "Decides if the alien develops limbs.",
@@ -276,6 +316,37 @@
         "part": "limb",
         "type": "develop",
         "effect": "amount",
-        "code": "LMB"
+        "code": "LMB",
+        "mandatory": false
+    },
+    {
+        "description": "Decides if the alien can grab things.",
+        "min": 0,
+        "max": 100,
+        "part": "limb",
+        "type": "function_value",
+        "effect": "grab_strength",
+        "code": "LMB_GRB",
+        "mandatory": false
+    },
+    {
+        "description": "Decides if the alien can walk.",
+        "min": 0,
+        "max": 100,
+        "part": "limb",
+        "type": "function_value",
+        "effect": "walk_speed",
+        "code": "LMB_WLK",
+        "mandatory": false
+    },
+    {
+        "description": "Decides if the alien can jump.",
+        "min": 0,
+        "max": 100,
+        "part": "limb",
+        "type": "function_value",
+        "effect": "jump_height",
+        "code": "LMB_JMP",
+        "mandatory": false
     }
 ]

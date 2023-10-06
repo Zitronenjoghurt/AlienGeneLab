@@ -7,8 +7,6 @@ def handle_part_type(part, type_name, value) -> str:
             return handle_color(value)
         case 'personality':
             return handle_personality(part, value)
-        case 'develop':
-            return extract_first_value(value)
         
     value_name = extract_first_key(value)
     match value_name:

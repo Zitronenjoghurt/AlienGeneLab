@@ -22,19 +22,27 @@ class GeneLibrary:
             GeneLibrary.__instance = GeneLibrary()
         return GeneLibrary.__instance
     
-    def get_gene(self, id):
+    def get_gene(self, id) -> Gene:
         return self.library.get(id, None)
+    
+    def get_gene_code(self, id) -> str:
+        gene = self.get_gene(id)
 
-    def get_all_genes(self):
+        if not gene:
+            return None
+        
+        return gene.code
+
+    def get_all_genes(self) -> dict:
         return self.library
     
-    def get_all_developing_genes(self):
+    def get_all_developing_genes(self) -> dict:
         filtered_library = {id: gene for id, gene in self.library.items() if gene.type == 'develop'}
         return filtered_library
     
-    def get_all_non_developing_genes(self):
+    def get_all_non_developing_genes(self) -> dict:
         filtered_library = {id: gene for id, gene in self.library.items() if gene.type != 'develop'}
         return filtered_library
     
-    def get_max_id(self):
+    def get_max_id(self) -> int:
         return len(self.library) - 1

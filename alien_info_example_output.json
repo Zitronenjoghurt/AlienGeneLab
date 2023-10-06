@@ -1,162 +1,303 @@
 {
-    "genetic_code": "AAAAAAAGAAAAAAAGAAAAAAATAAAAAAATCGGAAAGACGGAAAGAAAAAAAGGAAAAAAGGACCAAAGCACCAAAGCTTGCAAGTTTGCAAGTTTCTAATATTCTAATATTTGAATTTTTGAATTAAGTAGAAAAGTAGAATTATAGATTTATAGATCACGAGGACACGAGGA",
+    "genetic_code": "AAAAAAAAAAAAAAAATGGAAAAGTGGAAAAGTAGGAAATTAGGAAATAAAAAAGAAAAAAAGAGGGAAAGGGGGAAAGGCTTAAAGCCTTAAAGCCACGAAGTCACGAAGTGATTAACAGATTAACATGGGAACGTGGGAACGGCCCAACCGCCCAACCAGTGAATAAGTGAATAGTTGAATGGTTGAATGGTGGAATCGTGGAATCAACTAATTAACTAATTCTGCAGAACTGCAGAATGTAAGAGTGTAAGAGTGAAAGATTGAAAGATACTGAGGAACTGAGGACTCAAGGGCTCAAGGGTAGGAGGCTAGGAGGCCGAGAGCACGAGAGCAAGTAAGCGAGTAAGCGCCGCAGCCCCGCAGCCTCCTAGCTTCCTAGCTCGCGAGTGCGCGAGTG",
+    "allele_sequence": "(0SK)(0SK)(212SR)(212SR)(197SB)(197SB)(0BR)(0BR)(84PD)(84PD)(188PERS_CO)(188PERS_CO)(137PERS_SA)(137PERS_SA)(79PERS_NA)(79PERS_NA)(213PERS_CF)(213PERS_CF)(106PERS_SH)(106PERS_SH)(29PERS_SE)(29PERS_SE)(125PERS_ST)(125PERS_ST)(117PERS_LO)(117PERS_LO)(11PERS_HU)(11PERS_HU)(182PERS_AM)(182PERS_AM)(220PERS_GR)(220PERS_GR)(208PERS_EC)(208PERS_EC)(45PERS_AS)(45PERS_AS)(184PERS_PA)(184PERS_PA)(197PERS_PA)(197PERS_PA)(145PERS_IM)(145PERS_IM)(28PERS_SK)(28PERS_SK)(166PERS_TR)(166PERS_TR)(235PERS_DR)(235PERS_DR)(153PERS_GG)(153PERS_GG)",
     "genotype": {
-        "1": {
+        "0": {
             "1": {
-                "id": 1,
+                "id": 0,
                 "value": 0
             },
             "2": {
-                "id": 1,
+                "id": 0,
                 "value": 0
+            }
+        },
+        "1": {
+            "1": {
+                "id": 1,
+                "value": 212
+            },
+            "2": {
+                "id": 1,
+                "value": 212
             }
         },
         "3": {
             "1": {
                 "id": 3,
-                "value": 0
+                "value": 197
             },
             "2": {
                 "id": 3,
-                "value": 0
+                "value": 197
             }
         },
         "4": {
             "1": {
                 "id": 4,
-                "value": 148
+                "value": 0
             },
             "2": {
                 "id": 4,
-                "value": 148
+                "value": 0
             }
         },
         "5": {
             "1": {
                 "id": 5,
-                "value": 0
+                "value": 84
             },
             "2": {
                 "id": 5,
-                "value": 0
+                "value": 84
             }
         },
         "6": {
             "1": {
                 "id": 6,
-                "value": 40
+                "value": 188
             },
             "2": {
                 "id": 6,
-                "value": 40
+                "value": 188
             }
         },
         "7": {
             "1": {
                 "id": 7,
-                "value": 246
+                "value": 137
             },
             "2": {
                 "id": 7,
-                "value": 246
+                "value": 137
+            }
+        },
+        "8": {
+            "1": {
+                "id": 8,
+                "value": 79
+            },
+            "2": {
+                "id": 8,
+                "value": 79
+            }
+        },
+        "9": {
+            "1": {
+                "id": 9,
+                "value": 213
+            },
+            "2": {
+                "id": 9,
+                "value": 213
+            }
+        },
+        "10": {
+            "1": {
+                "id": 10,
+                "value": 106
+            },
+            "2": {
+                "id": 10,
+                "value": 106
             }
         },
         "12": {
             "1": {
                 "id": 12,
-                "value": 251
+                "value": 29
             },
             "2": {
                 "id": 12,
-                "value": 251
+                "value": 29
+            }
+        },
+        "13": {
+            "1": {
+                "id": 13,
+                "value": 125
+            },
+            "2": {
+                "id": 13,
+                "value": 125
+            }
+        },
+        "14": {
+            "1": {
+                "id": 14,
+                "value": 117
+            },
+            "2": {
+                "id": 14,
+                "value": 117
             }
         },
         "15": {
             "1": {
                 "id": 15,
-                "value": 253
+                "value": 11
             },
             "2": {
                 "id": 15,
-                "value": 253
+                "value": 11
             }
         },
         "16": {
             "1": {
                 "id": 16,
-                "value": 7
+                "value": 182
             },
             "2": {
                 "id": 16,
-                "value": 7
+                "value": 182
+            }
+        },
+        "17": {
+            "1": {
+                "id": 17,
+                "value": 220
+            },
+            "2": {
+                "id": 17,
+                "value": 220
             }
         },
         "19": {
             "1": {
                 "id": 19,
-                "value": 243
+                "value": 208
             },
             "2": {
                 "id": 19,
-                "value": 243
+                "value": 208
             }
         },
         "20": {
             "1": {
                 "id": 20,
-                "value": 137
+                "value": 45
             },
             "2": {
                 "id": 20,
-                "value": 137
+                "value": 45
+            }
+        },
+        "21": {
+            "1": {
+                "id": 21,
+                "value": 184
+            },
+            "2": {
+                "id": 21,
+                "value": 184
+            }
+        },
+        "22": {
+            "1": {
+                "id": 22,
+                "value": 197
+            },
+            "2": {
+                "id": 22,
+                "value": 197
+            }
+        },
+        "24": {
+            "1": {
+                "id": 24,
+                "value": 145
+            },
+            "2": {
+                "id": 24,
+                "value": 145
+            }
+        },
+        "25": {
+            "1": {
+                "id": 25,
+                "value": 28
+            },
+            "2": {
+                "id": 25,
+                "value": 28
+            }
+        },
+        "26": {
+            "1": {
+                "id": 26,
+                "value": 166
+            },
+            "2": {
+                "id": 26,
+                "value": 166
+            }
+        },
+        "27": {
+            "1": {
+                "id": 27,
+                "value": 235
+            },
+            "2": {
+                "id": 27,
+                "value": 235
+            }
+        },
+        "29": {
+            "1": {
+                "id": 29,
+                "value": 153
+            },
+            "2": {
+                "id": 29,
+                "value": 153
             }
         }
     },
     "phenotype": {
         "skin": {
             "color": {
-                "red": 0,
+                "red": 212,
                 "green": 0,
-                "blue": 148
+                "blue": 197
             }
         },
         "brain": {
             "personality_depth": {
-                "depth": 40
+                "depth": 84
             },
             "personality": {
-                "cool": 0,
-                "naive": 0,
-                "confident": 0,
-                "shy": 0,
-                "playful": 251,
-                "serious": 0,
-                "stubborn": 0,
-                "loyal": 253,
-                "humble": 7,
-                "ambitious": 0,
-                "greedy": 0,
-                "lazy": 243,
-                "eccentric": 137,
-                "assertive": 0,
-                "passive": 0,
+                "cool": 137,
+                "naive": 79,
+                "confident": 213,
+                "shy": 106,
+                "playful": 0,
+                "serious": 29,
+                "stubborn": 125,
+                "loyal": 117,
+                "humble": 11,
+                "ambitious": 182,
+                "greedy": 220,
+                "lazy": 0,
+                "eccentric": 208,
+                "assertive": 45,
+                "passive": 197,
                 "apathetic": 0,
-                "impulsive": 0,
-                "skeptical": 0,
-                "trusting": 0,
-                "dreamy": 0,
+                "impulsive": 145,
+                "skeptical": 28,
+                "trusting": 166,
+                "dreamy": 235,
                 "spontaneous": 0,
-                "gregarious": 0
+                "gregarious": 153
             }
         }
     },
     "description": {
         "skin": {
-            "color": "navy"
+            "color": "mediumorchid"
         },
         "brain": {
-            "personality_depth": 40,
-            "personality": "loyal, playful"
+            "personality_depth": 84,
+            "personality": "dreamy, greedy, confident, eccentric"
         }
     }
 }

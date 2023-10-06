@@ -2,6 +2,7 @@ from ..modules.part_type_handler import handle_part_type
 
 from .genotype import Genotype
 from .phenotype import Phenotype
+from .gene_library import GeneLibrary
 
 # An entity which holds a genotype and phenotype.
 # The genotype describes how the alien 'looks' on a genetic level.
@@ -65,6 +66,7 @@ class Alien:
     def get_full_info(self) -> dict:
         info = {
             "genetic_code": self.get_genetic_code(),
+            "allele_sequence": self.get_allele_sequence(),
             "genotype": self.get_genotype_dict(),
             "phenotype": self.get_phenotype_dict(),
             "description": self.get_description()
@@ -76,3 +78,15 @@ class Alien:
     
     def get_random_haplotype(self):
         return self.genotype.get_random_haplotype()
+    
+    def get_allele_sequence(self):
+        library = GeneLibrary.get_instance()
+        sequence = self.genotype.get_sequence()
+        
+        alleles = []
+        for i in range (0, len(sequence), 2):
+            value = sequence[i]
+            id = sequence[i+1]
+            alleles.append(str(value) + library.get_gene_code(id))
+        
+        return ''.join(["("+allele+ ")" for allele in alleles])

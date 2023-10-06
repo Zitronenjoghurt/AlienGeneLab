@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "description": "Decides if the alien develops skin.",
         "min": 0,
         "max": 0,
@@ -10,7 +9,6 @@
         "code": "SK"
     },
     {
-        "id": 2,
         "description": "The red part of the skin color.",
         "min": 0,
         "max": 255,
@@ -20,7 +18,6 @@
         "code": "SR"
     },
     {
-        "id": 3,
         "description": "The green part of the skin color.",
         "min": 0,
         "max": 255,
@@ -30,7 +27,6 @@
         "code": "SG"
     },
     {
-        "id": 4,
         "description": "The blue part of the skin color.",
         "min": 0,
         "max": 255,
@@ -40,7 +36,6 @@
         "code": "SB"
     },
     {
-        "id": 5,
         "description": "Decides if the alien develops a brain.",
         "min": 0,
         "max": 0,
@@ -50,7 +45,6 @@
         "code": "BR"
     },
     {
-        "id": 6,
         "description": "Decides how deep of a personality development the brain of the alien allows.",
         "min": 0,
         "max": 100,
@@ -60,7 +54,6 @@
         "code": "PD"
     },
     {
-        "id": 7,
         "description": "Decides if the brain could develop the personality: cool.",
         "min": 0,
         "max": 255,
@@ -70,7 +63,6 @@
         "code": "PERS_CO"
     },
     {
-        "id": 8,
         "description": "Decides if the brain could develop the personality: sassy.",
         "min": 0,
         "max": 255,
@@ -80,7 +72,6 @@
         "code": "PERS_SA"
     },
     {
-        "id": 9,
         "description": "Decides if the brain could develop the personality: naive.",
         "min": 0,
         "max": 255,
@@ -90,7 +81,6 @@
         "code": "PERS_NA"
     },
     {
-        "id": 10,
         "description": "Decides if the brain could develop the personality: confident.",
         "min": 0,
         "max": 255,
@@ -100,7 +90,6 @@
         "code": "PERS_CF"
     },
     {
-        "id": 11,
         "description": "Decides if the brain could develop the personality: shy.",
         "min": 0,
         "max": 255,
@@ -110,7 +99,6 @@
         "code": "PERS_SH"
     },
     {
-        "id": 12,
         "description": "Decides if the brain could develop the personality: playful.",
         "min": 0,
         "max": 255,
@@ -120,7 +108,6 @@
         "code": "PERS_PL"
     },
     {
-        "id": 13,
         "description": "Decides if the brain could develop the personality: serious.",
         "min": 0,
         "max": 255,
@@ -130,7 +117,6 @@
         "code": "PERS_SE"
     },
     {
-        "id": 14,
         "description": "Decides if the brain could develop the personality: stubborn.",
         "min": 0,
         "max": 255,
@@ -140,7 +126,6 @@
         "code": "PERS_ST"
     },
     {
-        "id": 15,
         "description": "Decides if the brain could develop the personality: loyal.",
         "min": 0,
         "max": 255,
@@ -150,7 +135,6 @@
         "code": "PERS_LO"
     },
     {
-        "id": 16,
         "description": "Decides if the brain could develop the personality: humble.",
         "min": 0,
         "max": 255,
@@ -160,7 +144,6 @@
         "code": "PERS_HU"
     },
     {
-        "id": 17,
         "description": "Decides if the brain could develop the personality: ambitious.",
         "min": 0,
         "max": 255,
@@ -170,7 +153,6 @@
         "code": "PERS_AM"
     },
     {
-        "id": 18,
         "description": "Decides if the brain could develop the personality: greedy.",
         "min": 0,
         "max": 255,
@@ -180,7 +162,6 @@
         "code": "PERS_GR"
     },
     {
-        "id": 19,
         "description": "Decides if the brain could develop the personality: lazy.",
         "min": 0,
         "max": 255,
@@ -190,7 +171,6 @@
         "code": "PERS_LA"
     },
     {
-        "id": 20,
         "description": "Decides if the brain could develop the personality: eccentric.",
         "min": 0,
         "max": 255,
@@ -200,7 +180,6 @@
         "code": "PERS_EC"
     },
     {
-        "id": 21,
         "description": "Decides if the brain could develop the personality: assertive.",
         "min": 0,
         "max": 255,
@@ -210,7 +189,6 @@
         "code": "PERS_AS"
     },
     {
-        "id": 22,
         "description": "Decides if the brain could develop the personality: passive.",
         "min": 0,
         "max": 255,
@@ -220,7 +198,6 @@
         "code": "PERS_PA"
     },
     {
-        "id": 23,
         "description": "Decides if the brain could develop the personality: passive.",
         "min": 0,
         "max": 255,
@@ -230,7 +207,6 @@
         "code": "PERS_PA"
     },
     {
-        "id": 24,
         "description": "Decides if the brain could develop the personality: apathetic.",
         "min": 0,
         "max": 255,
@@ -240,7 +216,6 @@
         "code": "PERS_AP"
     },
     {
-        "id": 25,
         "description": "Decides if the brain could develop the personality: impulsive.",
         "min": 0,
         "max": 255,
@@ -250,7 +225,6 @@
         "code": "PERS_IM"
     },
     {
-        "id": 26,
         "description": "Decides if the brain could develop the personality: skeptical.",
         "min": 0,
         "max": 255,
@@ -260,7 +234,6 @@
         "code": "PERS_SK"
     },
     {
-        "id": 27,
         "description": "Decides if the brain could develop the personality: trusting.",
         "min": 0,
         "max": 255,
@@ -270,7 +243,6 @@
         "code": "PERS_TR"
     },
     {
-        "id": 28,
         "description": "Decides if the brain could develop the personality: dreamy.",
         "min": 0,
         "max": 255,
@@ -280,7 +252,6 @@
         "code": "PERS_DR"
     },
     {
-        "id": 29,
         "description": "Decides if the brain could develop the personality: spontaneous.",
         "min": 0,
         "max": 255,
@@ -290,7 +261,6 @@
         "code": "PERS_SP"
     },
     {
-        "id": 30,
         "description": "Decides if the brain could develop the personality: gregarious.",
         "min": 0,
         "max": 255,

@@ -13,9 +13,9 @@ class GeneLibrary:
         self.library = {}
         with open(GENE_FILE_PATH, 'r') as json_file:
             genes_data = json.load(json_file)
-            for gene_data in genes_data:
-                gene = Gene.from_dict(gene_data)
-                self.library[gene.id] = gene
+            for id, gene_data in enumerate(genes_data):
+                gene = Gene.from_dict(id, gene_data)
+                self.library[id] = gene
 
     def get_instance():
         if GeneLibrary.__instance is None:

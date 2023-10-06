@@ -10,9 +10,9 @@ class Gene:
         self.effect = effect
         self.code = code
 
-    def from_dict(data):
+    def from_dict(id, data):
         return Gene(
-            id=data['id'],
+            id=id,
             description=data['description'],
             min=data['min'],
             max=data['max'],

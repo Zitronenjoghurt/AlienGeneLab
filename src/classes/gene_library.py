@@ -37,4 +37,4 @@ class GeneLibrary:
         return filtered_library
     
     def get_max_id(self):
-        return len(self.library)
+        return len(self.library) - 1

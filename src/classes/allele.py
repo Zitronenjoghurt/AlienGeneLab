@@ -12,7 +12,7 @@ class Allele:
         library = GeneLibrary.get_instance()
 
         id = sequence[1]
-        id = limit_between(id, 1, library.get_max_id())
+        id = limit_between(id, 0, library.get_max_id())
         
         gene = library.get_gene(id)
 

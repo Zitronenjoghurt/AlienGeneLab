@@ -61,7 +61,7 @@ class Alien:
                 if type_name == 'develop':
                     part_info[extract_first_key(value)] = extract_first_value(value)
                 else:
-                    part_info[type_name] = handle_part_type(part, type_name, value)
+                    part_info[type_name] = handle_part_type(part_name, part, type_name, value)
             description[part_name] = part_info
 
         return description

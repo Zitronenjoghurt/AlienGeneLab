@@ -25,6 +25,14 @@ class GeneLibrary:
     def get_gene(self, id) -> Gene:
         return self.library.get(id, None)
     
+    def find_gene(self, part, type, effect) -> Gene|None:
+        results = [entry for entry in self.library.values() if entry.part == part and entry.type == type and entry.effect == effect]
+
+        if len(results) == 0:
+            return None
+        
+        return results[0]
+    
     def get_gene_code(self, id) -> str:
         gene = self.get_gene(id)
 

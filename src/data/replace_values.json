@@ -1,0 +1,14 @@
+{
+    "size": {
+        "replacement": ["miniscule", "tiny", "small", "modest", "medium", "big", "large", "huge", "vast", "collossal"],
+        "keys": ["jump_height", "size"]
+    },
+    "speed": {
+        "replacement": ["stationary", "crawling", "slow", "moderate", "brisk", "fast", "rapid", "swift", "blazing", "lightning"],
+        "keys": ["walk_speed"]
+    },
+    "strength": {
+        "replacement": ["feeble", "weak", "mild", "adequate", "sturdy", "robust", "strong", "formidable", "powerful", "herculean"],
+        "keys": ["grab_strength"]
+    }
+}

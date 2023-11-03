@@ -1,15 +1,15 @@
 {
-    "genetic_code": "AATGAAAAAATGAAAAAAAAAAAGAAAAAAAGTTTCAAACTTTCAAACGCGAAAGAGCGAAAGAAAAAAAGGAAAAAAGGAAACAAGCAAACAAGCCCGTAACACCGTAACAAACGAACGAACGAACGGACAAACCGACAAACCACGTAACTACGTAACTACACAATGACACAATGCTCAAATCCTCAAATCCATCAATTCATCAATTAGTCAGAGAGTCAGAGCACTAGACCACTAGACATCAAGATATCAAGATACCAAGGAACCAAGGATACCAGGGTACCAGGGACCGAGGCACCGAGGCGTCTAGGTGTCTAGGTGTAGAGCAGTAGAGCACCATAGCGCCATAGCGTCCCAGCCTCCCAGCCATCGAGCTATCGAGCTGTTGAGTAGTTGAGTATTTTAGTGTTTTAGTGACACAGTCACACAGTCAAGAAGTTAAGAAGTTAATAACAAAATAACAAAATCACAGAATCACAGATACACACATACACAC",
-    "allele_sequence": "(13BDY)(13BDY)(0SKN)(0SKN)(254SKNR)(254SKNR)(100SKNB)(100SKNB)(0BRN)(0BRN)(2PRD)(2PRD)(167PERS_SA)(167PERS_SA)(9PERS_NA)(9PERS_NA)(72PERS_CF)(72PERS_CF)(39PERS_SH)(39PERS_SH)(34PERS_SE)(34PERS_SE)(184PERS_ST)(184PERS_ST)(142PERS_LO)(142PERS_LO)(30PERS_AM)(30PERS_AM)(139PERS_GR)(139PERS_GR)(56PERS_LA)(56PERS_LA)(40PERS_EC)(40PERS_EC)(202PERS_AS)(202PERS_AS)(41PERS_PA)(41PERS_PA)(123PERS_PA)(123PERS_PA)(113PERS_AP)(113PERS_AP)(163PERS_IM)(163PERS_IM)(234PERS_SK)(234PERS_SK)(57PERS_TR)(57PERS_TR)(125PERS_DR)(125PERS_DR)(255PERS_SP)(255PERS_SP)(34PERS_GG)(34PERS_GG)(4LMB)(4LMB)(12LMB_GRB)(12LMB_GRB)(14LMB_WLK)(14LMB_WLK)(50LMB_JMP)(50LMB_JMP)",
+    "genetic_code": "ATCCAAAAATCCAAAAAAAAAAAGAAAAAAAGCAAGAAACCAAGAAACACTTAAATACTTAAATTCTGAAGATCTGAAGAAAAAAAGGAAAAAAGGAGTCAAGCAGTCAAGCGGTCAAGTGGTCAAGTTGCGAACATGCGAACAGGTTAACCGGTTAACCAGGCAATGAGGCAATGTGTTAGAGTGTTAGAGTCAAAGATTCAAAGATTTTAAGGATTTAAGGACGGGAGGGCGGGAGGGTTATAGGCTTATAGGCTTTCAGGTTTTCAGGTGGACAGCAGGACAGCACGATAGCGCGATAGCGCGTGAGCTCGTGAGCTTCCAAGTATCCAAGTAAAGCAGTCAAGCAGTCAAGCAGTTAAGCAGTTATGAACAAATGAACAATAGCACAGTAGCACAGGAGAACACGAGAACAC",
+    "allele_sequence": "(58BDY)(58BDY)(0SKN)(0SKN)(129SKNR)(129SKNR)(47SKNG)(47SKNG)(237SKNB)(237SKNB)(0BRN)(0BRN)(30PRD)(30PRD)(94PERS_CO)(94PERS_CO)(217PERS_SA)(217PERS_SA)(95PERS_CF)(95PERS_CF)(22PERS_SE)(22PERS_SE)(223PERS_AM)(223PERS_AM)(224PERS_LA)(224PERS_LA)(252PERS_EC)(252PERS_EC)(149PERS_AS)(149PERS_AS)(243PERS_PA)(243PERS_PA)(254PERS_PA)(254PERS_PA)(82PERS_AP)(82PERS_AP)(147PERS_IM)(147PERS_IM)(157PERS_TR)(157PERS_TR)(232PERS_DR)(232PERS_DR)(6PERS_GG)(6PERS_GG)(6LMB)(6LMB)(52LMB_GRB)(52LMB_GRB)(198LMB_WLK)(198LMB_WLK)(68LMB_JMP)(68LMB_JMP)",
     "genotype": {
         "0": {
             "1": {
                 "id": 0,
-                "value": 13
+                "value": 58
             },
             "2": {
                 "id": 0,
-                "value": 13
+                "value": 58
             }
         },
         "1": {
@@ -25,21 +25,31 @@
         "2": {
             "1": {
                 "id": 2,
-                "value": 254
+                "value": 129
             },
             "2": {
                 "id": 2,
-                "value": 254
+                "value": 129
+            }
+        },
+        "3": {
+            "1": {
+                "id": 3,
+                "value": 47
+            },
+            "2": {
+                "id": 3,
+                "value": 47
             }
         },
         "4": {
             "1": {
                 "id": 4,
-                "value": 100
+                "value": 237
             },
             "2": {
                 "id": 4,
-                "value": 100
+                "value": 237
             }
         },
         "5": {
@@ -55,334 +65,276 @@
         "6": {
             "1": {
                 "id": 6,
-                "value": 2
+                "value": 30
             },
             "2": {
                 "id": 6,
-                "value": 2
+                "value": 30
+            }
+        },
+        "7": {
+            "1": {
+                "id": 7,
+                "value": 94
+            },
+            "2": {
+                "id": 7,
+                "value": 94
             }
         },
         "8": {
             "1": {
                 "id": 8,
-                "value": 167
+                "value": 217
             },
             "2": {
                 "id": 8,
-                "value": 167
-            }
-        },
-        "9": {
-            "1": {
-                "id": 9,
-                "value": 9
-            },
-            "2": {
-                "id": 9,
-                "value": 9
+                "value": 217
             }
         },
         "10": {
             "1": {
                 "id": 10,
-                "value": 72
+                "value": 95
             },
             "2": {
                 "id": 10,
-                "value": 72
-            }
-        },
-        "11": {
-            "1": {
-                "id": 11,
-                "value": 39
-            },
-            "2": {
-                "id": 11,
-                "value": 39
+                "value": 95
             }
         },
         "13": {
             "1": {
                 "id": 13,
-                "value": 34
+                "value": 22
             },
             "2": {
                 "id": 13,
-                "value": 34
-            }
-        },
-        "14": {
-            "1": {
-                "id": 14,
-                "value": 184
-            },
-            "2": {
-                "id": 14,
-                "value": 184
-            }
-        },
-        "15": {
-            "1": {
-                "id": 15,
-                "value": 142
-            },
-            "2": {
-                "id": 15,
-                "value": 142
+                "value": 22
             }
         },
         "17": {
             "1": {
                 "id": 17,
-                "value": 30
+                "value": 223
             },
             "2": {
                 "id": 17,
-                "value": 30
-            }
-        },
-        "18": {
-            "1": {
-                "id": 18,
-                "value": 139
-            },
-            "2": {
-                "id": 18,
-                "value": 139
+                "value": 223
             }
         },
         "19": {
             "1": {
                 "id": 19,
-                "value": 56
+                "value": 224
             },
             "2": {
                 "id": 19,
-                "value": 56
+                "value": 224
             }
         },
         "20": {
             "1": {
                 "id": 20,
-                "value": 40
+                "value": 252
             },
             "2": {
                 "id": 20,
-                "value": 40
+                "value": 252
             }
         },
         "21": {
             "1": {
                 "id": 21,
-                "value": 202
+                "value": 149
             },
             "2": {
                 "id": 21,
-                "value": 202
+                "value": 149
             }
         },
         "22": {
             "1": {
                 "id": 22,
-                "value": 41
+                "value": 243
             },
             "2": {
                 "id": 22,
-                "value": 41
+                "value": 243
             }
         },
         "23": {
             "1": {
                 "id": 23,
-                "value": 123
+                "value": 254
             },
             "2": {
                 "id": 23,
-                "value": 123
+                "value": 254
             }
         },
         "24": {
             "1": {
                 "id": 24,
-                "value": 113
+                "value": 82
             },
             "2": {
                 "id": 24,
-                "value": 113
+                "value": 82
             }
         },
         "25": {
             "1": {
                 "id": 25,
-                "value": 163
+                "value": 147
             },
             "2": {
                 "id": 25,
-                "value": 163
-            }
-        },
-        "26": {
-            "1": {
-                "id": 26,
-                "value": 234
-            },
-            "2": {
-                "id": 26,
-                "value": 234
+                "value": 147
             }
         },
         "27": {
             "1": {
                 "id": 27,
-                "value": 57
+                "value": 157
             },
             "2": {
                 "id": 27,
-                "value": 57
+                "value": 157
             }
         },
         "28": {
             "1": {
                 "id": 28,
-                "value": 125
+                "value": 232
             },
             "2": {
                 "id": 28,
-                "value": 125
-            }
-        },
-        "29": {
-            "1": {
-                "id": 29,
-                "value": 255
-            },
-            "2": {
-                "id": 29,
-                "value": 255
+                "value": 232
             }
         },
         "30": {
             "1": {
                 "id": 30,
-                "value": 34
+                "value": 6
             },
             "2": {
                 "id": 30,
-                "value": 34
+                "value": 6
             }
         },
         "31": {
             "1": {
                 "id": 31,
-                "value": 4
+                "value": 6
             },
             "2": {
                 "id": 31,
-                "value": 4
+                "value": 6
             }
         },
         "32": {
             "1": {
                 "id": 32,
-                "value": 12
+                "value": 52
             },
             "2": {
                 "id": 32,
-                "value": 12
+                "value": 52
             }
         },
         "33": {
             "1": {
                 "id": 33,
-                "value": 14
+                "value": 198
             },
             "2": {
                 "id": 33,
-                "value": 14
+                "value": 198
             }
         },
         "34": {
             "1": {
                 "id": 34,
-                "value": 50
+                "value": 68
             },
             "2": {
                 "id": 34,
-                "value": 50
+                "value": 68
             }
         }
     },
     "phenotype": {
         "body": {
+            "name": "body",
             "develop": {
-                "size": 13
+                "size": 58
             }
         },
         "skin": {
+            "name": "skin",
             "color": {
-                "red": 254,
-                "green": 0,
-                "blue": 100
+                "red": 129,
+                "green": 47,
+                "blue": 237
             }
         },
         "brain": {
-            "personality_depth": {
-                "value": 2
-            },
+            "name": "brain",
+            "personality_depth": 30,
             "personality": {
-                "cool": 167,
-                "naive": 9,
-                "confident": 72,
-                "shy": 39,
+                "cool": 217,
+                "naive": 0,
+                "confident": 95,
+                "shy": 0,
                 "playful": 0,
-                "serious": 34,
-                "stubborn": 184,
-                "loyal": 142,
+                "serious": 22,
+                "stubborn": 0,
+                "loyal": 0,
                 "humble": 0,
-                "ambitious": 30,
-                "greedy": 139,
-                "lazy": 56,
-                "eccentric": 40,
-                "assertive": 202,
-                "passive": 123,
-                "apathetic": 113,
-                "impulsive": 163,
-                "skeptical": 234,
-                "trusting": 57,
-                "dreamy": 125,
-                "spontaneous": 255,
-                "gregarious": 34
+                "ambitious": 223,
+                "greedy": 0,
+                "lazy": 224,
+                "eccentric": 252,
+                "assertive": 149,
+                "passive": 254,
+                "apathetic": 82,
+                "impulsive": 147,
+                "skeptical": 0,
+                "trusting": 157,
+                "dreamy": 232,
+                "spontaneous": 0,
+                "gregarious": 6
             }
         },
         "limb": {
+            "name": "limb",
             "develop": {
-                "amount": 4
+                "amount": 6
             },
-            "function_value": {
-                "grab_strength": 12,
-                "walk_speed": 14,
-                "jump_height": 50
+            "function": {
+                "grab_strength": 52,
+                "walk_speed": 198,
+                "jump_height": 68
             }
         }
     },
     "description": {
         "body": {
-            "size": 13
+            "size": "small (22.7%)"
         },
         "skin": {
-            "color": "deeppink"
+            "color": "blueviolet (#812fed)"
         },
         "brain": {
-            "personality_depth": 2,
-            "personality": ""
+            "personality_depth": "commonplace (30.0%)",
+            "personality": "passive"
         },
         "limb": {
-            "amount": 4,
-            "function_value": {
-                "grab_strength": "weak",
-                "walk_speed": "crawling",
-                "jump_height": "medium"
+            "amount": "6",
+            "function": {
+                "grab_strength": "mild (20.4%)",
+                "walk_speed": "swift (77.6%)",
+                "jump_height": "small (26.7%)"
             }
         }
     }

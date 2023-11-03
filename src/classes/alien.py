@@ -12,10 +12,13 @@ class Alien:
         self.genotype = genotype
         self.phenotype = Phenotype.generate_from_genotype(genotype)
 
-    def export_to_json(self, filename: str):
-        full_info = self.get_full_info()
+    def export_to_json(self, filename: str, only_description = False):
+        if only_description:
+            info = self.get_description()
+        else:
+            info = self.get_full_info()
         with open(filename, 'w') as json_file:
-            json.dump(full_info, json_file, indent=4)
+            json.dump(info, json_file, indent=4)
 
     # Generates a random alien.
     # pure => if true, the alien genotype will only have loci with 2 of the same alleles
@@ -31,8 +34,8 @@ class Alien:
         return self.genotype.to_genetic_code()
     
     # Breed this alien with another to create an offspring.
-    def breed(self, partner_alien):
-        if self.get_sex() == partner_alien.get_sex():
+    def breed(self, partner_alien, ignore_sex = False):
+        if not ignore_sex and self.get_sex() == partner_alien.get_sex():
             return None
 
         ht1 = self.get_random_haplotype()

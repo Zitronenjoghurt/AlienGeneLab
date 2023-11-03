@@ -130,6 +130,216 @@
         "mandatory": false
     },
     {
+        "description": "The skin sensitivity.",
+        "min": 0,
+        "max": 255,
+        "part": "skin",
+        "type": "sensitivity",
+        "effect": "",
+        "code": "SKNS",
+        "mandatory": false
+    },
+    {
+        "description": "The skin thickness.",
+        "min": 0,
+        "max": 255,
+        "part": "skin",
+        "type": "thickness",
+        "effect": "",
+        "code": "SKNT",
+        "mandatory": false
+    },
+    {
+        "description": "If the alien develops hair.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "develop",
+        "effect": "density",
+        "code": "HAIR",
+        "mandatory": false
+    },
+    {
+        "description": "The length of the hair.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "length",
+        "effect": "",
+        "code": "HAIRLEN",
+        "mandatory": false
+    },
+    {
+        "description": "The red part of the body color.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "color",
+        "effect": "red",
+        "code": "HAIRR",
+        "mandatory": false
+    },
+    {
+        "description": "The green part of the body color.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "color",
+        "effect": "green",
+        "code": "HAIRG",
+        "mandatory": false
+    },
+    {
+        "description": "The blue part of the body color.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "color",
+        "effect": "blue",
+        "code": "HAIRB",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is fluffy.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "fluffy",
+        "code": "HAIRFL",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is pokey.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "pokey",
+        "code": "HAIRPO",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is elastic.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "elastic",
+        "code": "HAIREL",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is scaly.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "scaly",
+        "code": "HAIRSC",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is slick.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "slick",
+        "code": "HAIRSL",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is gelatinous.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "gelatinous",
+        "code": "HAIRGE",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is fibrous.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "fibrous",
+        "code": "HAIRFI",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is barbed.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "barbed",
+        "code": "HAIRBA",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is feathery.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "feathery",
+        "code": "HAIRFE",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is glassy.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "glassy",
+        "code": "HAIRGL",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is metallic.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "metallic",
+        "code": "HAIRME",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is crystalline.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "crystalline",
+        "code": "HAIRCR",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is soft.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "soft",
+        "code": "HAIRSO",
+        "mandatory": false
+    },
+    {
+        "description": "If the texture of the hair is oily.",
+        "min": 0,
+        "max": 255,
+        "part": "hair",
+        "type": "texture",
+        "effect": "oily",
+        "code": "HAIROI",
+        "mandatory": false
+    },
+    {
         "description": "Decides if the alien develops a brain.",
         "min": 0,
         "max": 0,
@@ -137,6 +347,16 @@
         "type": "develop",
         "effect": "",
         "code": "BRN",
+        "mandatory": false
+    },
+    {
+        "description": "Decides how intelligent the alien is.",
+        "min": 0,
+        "max": 255,
+        "part": "brain",
+        "type": "intelligence",
+        "effect": "",
+        "code": "INT",
         "mandatory": false
     },
     {

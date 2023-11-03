@@ -60,6 +60,8 @@ class Part:
                 return "personality", self.__handle_personality(value)
             case "develop":
                 return self.__handle_develop(value)
+            case "texture":
+                return "texture", self.__handle_texture(value)
             
         if isinstance(value, dict):
             return property, self.__handle_dict(property, value)
@@ -128,3 +130,9 @@ class Part:
             return effect, self.__handle_integer("develop", value, effect)
         
         return effect, value
+    
+    def __handle_texture(self, textures):
+        # Sort textures
+        textures = {texture: value for texture, value in sorted(textures.items(), key=lambda item: item[1], reverse=True)}
+
+        return list(textures.keys())[0]

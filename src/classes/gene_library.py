@@ -62,3 +62,16 @@ class GeneLibrary:
     
     def get_max_id(self) -> int:
         return len(self.library) - 1
+    
+    def get_overview(self) -> dict:
+        overview = {}
+        for gene in self.library.values():
+            if gene.part not in overview:
+                overview[gene.part] = {}
+            
+            if gene.type not in overview[gene.part]:
+                overview[gene.part][gene.type] = []
+            
+            overview[gene.part][gene.type].append(gene.effect)
+        
+        return overview

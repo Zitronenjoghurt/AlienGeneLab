@@ -34,5 +34,17 @@
         "labels": ["minuscule", "tiny", "small", "moderate", "medium", "ample", "large", "huge", "vast", "enormous"],
         "min_label": "almost none",
         "max_label": "overflowing"
+    },
+    "density": {
+        "keys": [],
+        "labels": ["sparse", "scattered", "loose", "fine", "medium", "dense", "packed", "compact", "heavy"],
+        "min_label": "none",
+        "max_label": "solid"
+    },
+    "length": {
+        "keys": [],
+        "labels": ["tiny", "short", "modest", "medium", "considerable", "long", "lengthy", "extended", "gigantic", "insanely long"],
+        "min_label": "none",
+        "max_label": "immense"
     }
 }

@@ -50,6 +50,15 @@ def base4_sum(string: str) -> int:
     result = 0
 
     for char in string:
-        result += CODE.get(char, 0)
+        result += REVERSED_CODE.get(char, 0)
     
+    return result
+
+def count_char(string: str, char: str) -> int:
+    result = 0
+
+    for character in string:
+        if character == char:
+            result += 1
+
     return result

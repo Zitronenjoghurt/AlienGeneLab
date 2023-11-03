@@ -4,7 +4,7 @@ from .gene_library import GeneLibrary
 from .haplotype import Haplotype
 from .locus import Locus
 
-from ..modules.genetic_code import decode, encode, base4_sum
+from ..modules.genetic_code import decode, encode, base4_sum, count_char
 
 # The genotype of an alien is made up of multiple loci,
 # where each locus decides a different property of a body part.
@@ -118,3 +118,10 @@ class Genotype:
     def get_genetic_sum(self):
         genetic_code = self.to_genetic_code()
         return base4_sum(genetic_code)
+    
+    def get_sex_defining_value(self):
+        genetic_code = self.to_genetic_code()
+        count_A = count_char(genetic_code, "A")
+        count_T = count_char(genetic_code, "T")
+
+        return round(count_A / count_T)

@@ -28,8 +28,8 @@ class Phenotype:
                 parts[gene.part].add_value(gene.type, gene.effect, genotype.get_locus_value(gene.id))
 
         # other properties
-        genetic_sum = genotype.get_genetic_sum()
-        if genetic_sum % 2 == 0:
+        sex_defining_value = genotype.get_sex_defining_value()
+        if sex_defining_value % 2 == 0:
             parts["body"].add_value("sex", "", "male")
         else:
             parts["body"].add_value("sex", "", "female")

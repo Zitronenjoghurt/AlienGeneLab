@@ -1,7 +1,7 @@
 [
     {
         "description": "Decides the size of the alien.",
-        "min": 0,
+        "min": 1,
         "max": 255,
         "part": "body",
         "type": "develop",
@@ -322,7 +322,7 @@
     {
         "description": "Decides if the alien can grab things.",
         "min": 0,
-        "max": 100,
+        "max": 255,
         "part": "limb",
         "type": "function",
         "effect": "grab_strength",
@@ -332,7 +332,7 @@
     {
         "description": "Decides if the alien can walk.",
         "min": 0,
-        "max": 100,
+        "max": 255,
         "part": "limb",
         "type": "function",
         "effect": "walk_speed",
@@ -342,7 +342,7 @@
     {
         "description": "Decides if the alien can jump.",
         "min": 0,
-        "max": 100,
+        "max": 255,
         "part": "limb",
         "type": "function",
         "effect": "jump_height",

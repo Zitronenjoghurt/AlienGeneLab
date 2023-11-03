@@ -22,5 +22,17 @@
         "labels": ["superficial", "simple", "plain", "commonplace", "layered", "complex", "intricate", "profound", "multidimensional", "enigmatic"],
         "min_label": "nonexistent",
         "max_label": "cosmic"
+    },
+    "temperature": {
+        "keys": [],
+        "labels": ["freezing", "chilly", "cool", "temperate", "mild", "warm", "toasty", "hot", "very hot", "sweltering"],
+        "min_label": "varying temperature",
+        "max_label": "boiling"
+    },
+    "volume": {
+        "keys": [],
+        "labels": ["minuscule", "tiny", "small", "moderate", "medium", "ample", "large", "huge", "vast", "enormous"],
+        "min_label": "almost none",
+        "max_label": "overflowing"
     }
 }

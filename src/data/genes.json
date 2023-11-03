@@ -10,6 +10,86 @@
         "mandatory": true
     },
     {
+        "description": "The red part of the body color.",
+        "min": 0,
+        "max": 255,
+        "part": "body",
+        "type": "color",
+        "effect": "red",
+        "code": "BDYR",
+        "mandatory": false
+    },
+    {
+        "description": "The green part of the body color.",
+        "min": 0,
+        "max": 255,
+        "part": "body",
+        "type": "color",
+        "effect": "green",
+        "code": "BDYG",
+        "mandatory": false
+    },
+    {
+        "description": "The blue part of the body color.",
+        "min": 0,
+        "max": 255,
+        "part": "body",
+        "type": "color",
+        "effect": "blue",
+        "code": "BDYB",
+        "mandatory": false
+    },
+    {
+        "description": "Decides if the alien develops blood.",
+        "min": 1,
+        "max": 255,
+        "part": "blood",
+        "type": "develop",
+        "effect": "volume",
+        "code": "BLD",
+        "mandatory": false
+    },
+    {
+        "description": "The temperature of the blood.",
+        "min": 0,
+        "max": 255,
+        "part": "blood",
+        "type": "temperature",
+        "effect": "",
+        "code": "BLDT",
+        "mandatory": false
+    },
+    {
+        "description": "The red part of the blood color.",
+        "min": 0,
+        "max": 255,
+        "part": "blood",
+        "type": "color",
+        "effect": "red",
+        "code": "BLDR",
+        "mandatory": false
+    },
+    {
+        "description": "The green part of the blood color.",
+        "min": 0,
+        "max": 255,
+        "part": "blood",
+        "type": "color",
+        "effect": "green",
+        "code": "BLDG",
+        "mandatory": false
+    },
+    {
+        "description": "The blue part of the blood color.",
+        "min": 0,
+        "max": 255,
+        "part": "blood",
+        "type": "color",
+        "effect": "blue",
+        "code": "BLDB",
+        "mandatory": false
+    },
+    {
         "description": "Decides if the alien develops skin.",
         "min": 0,
         "max": 0,

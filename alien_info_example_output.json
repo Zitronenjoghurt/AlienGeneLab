@@ -1,265 +1,345 @@
 {
-    "genetic_code": "ATCCAAAAATCCAAAAAAAAAAAGAAAAAAAGCAAGAAACCAAGAAACACTTAAATACTTAAATTCTGAAGATCTGAAGAAAAAAAGGAAAAAAGGAGTCAAGCAGTCAAGCGGTCAAGTGGTCAAGTTGCGAACATGCGAACAGGTTAACCGGTTAACCAGGCAATGAGGCAATGTGTTAGAGTGTTAGAGTCAAAGATTCAAAGATTTTAAGGATTTAAGGACGGGAGGGCGGGAGGGTTATAGGCTTATAGGCTTTCAGGTTTTCAGGTGGACAGCAGGACAGCACGATAGCGCGATAGCGCGTGAGCTCGTGAGCTTCCAAGTATCCAAGTAAAGCAGTCAAGCAGTCAAGCAGTTAAGCAGTTATGAACAAATGAACAATAGCACAGTAGCACAGGAGAACACGAGAACAC",
-    "allele_sequence": "(58BDY)(58BDY)(0SKN)(0SKN)(129SKNR)(129SKNR)(47SKNG)(47SKNG)(237SKNB)(237SKNB)(0BRN)(0BRN)(30PRD)(30PRD)(94PERS_CO)(94PERS_CO)(217PERS_SA)(217PERS_SA)(95PERS_CF)(95PERS_CF)(22PERS_SE)(22PERS_SE)(223PERS_AM)(223PERS_AM)(224PERS_LA)(224PERS_LA)(252PERS_EC)(252PERS_EC)(149PERS_AS)(149PERS_AS)(243PERS_PA)(243PERS_PA)(254PERS_PA)(254PERS_PA)(82PERS_AP)(82PERS_AP)(147PERS_IM)(147PERS_IM)(157PERS_TR)(157PERS_TR)(232PERS_DR)(232PERS_DR)(6PERS_GG)(6PERS_GG)(6LMB)(6LMB)(52LMB_GRB)(52LMB_GRB)(198LMB_WLK)(198LMB_WLK)(68LMB_JMP)(68LMB_JMP)",
+    "genetic_code": "TAGCAAAATAGCAAAAAACGAAAGAACGAAAGGTAGAAATGTAGAAATCTGTAAGACTGTAAGAGGTCAAGCGGTCAAGCCTTGAACACTTGAACATGCGAACCTGCGAACCTCGGAATATCGGAATAGTCCAATTGTCCAATTGGCAAGAAGGCAAGAATAATAGAGTAATAGAGAGAAAGACAGAAAGACGCAGAGATGCAGAGATCTTCAGGACTTCAGGACGAAAGGGCGAAAGGGAATTAGGCAATTAGGCCGGTAGGTCGGTAGGTACCAAGCAACCAAGCATATAAGCGTATAAGCGATCAAGCCATCAAGCCTTCTAGCTTTCTAGCTAGGAAGTAAGGAAGTAGGGAAGTGGGGAAGTGATTTAGTCATTTAGTCATGAAGTTATGAAGTTCTTAACAGCTTAACAGTCTCACACTCTCACACACCAACATACCAACATGGATACGGGGATACGGTGGCACGCTGGCACGCAAGTACGTAAGTACGTTATGACCATATGACCACCCGACCGCCCGACCGATAAACCCATAAACCC",
+    "allele_sequence": "(198BDY)(198BDY)(9BDYR)(9BDYR)(113BDYB)(113BDYB)(183BLD)(183BLD)(94BLDR)(94BLDR)(189BLDB)(189BLDB)(217SKNR)(217SKNR)(229SKNB)(229SKNB)(122PERS_CO)(122PERS_CO)(88PERS_SA)(88PERS_SA)(195PERS_NA)(195PERS_NA)(16PERS_CF)(16PERS_CF)(97PERS_SH)(97PERS_SH)(190PERS_PL)(190PERS_PL)(144PERS_SE)(144PERS_SE)(15PERS_ST)(15PERS_ST)(151PERS_LO)(151PERS_LO)(40PERS_HU)(40PERS_HU)(204PERS_AM)(204PERS_AM)(56PERS_GR)(56PERS_GR)(251PERS_LA)(251PERS_LA)(20PERS_EC)(20PERS_EC)(84PERS_AS)(84PERS_AS)(63PERS_PA)(63PERS_PA)(52PERS_PA)(52PERS_PA)(188PERS_IM)(188PERS_IM)(238PERS_SK)(238PERS_SK)(40PERS_TR)(40PERS_TR)(83PERS_SP)(83PERS_SP)(214PERS_GG)(214PERS_GG)(7LMB)(7LMB)(205LMB_GRB)(205LMB_GRB)(169LMB_WLK)(169LMB_WLK)(48LMB_JMP)(48LMB_JMP)",
     "genotype": {
         "0": {
             "1": {
                 "id": 0,
-                "value": 58
+                "value": 198
             },
             "2": {
                 "id": 0,
-                "value": 58
+                "value": 198
             }
         },
         "1": {
             "1": {
                 "id": 1,
-                "value": 0
+                "value": 9
             },
             "2": {
                 "id": 1,
-                "value": 0
-            }
-        },
-        "2": {
-            "1": {
-                "id": 2,
-                "value": 129
-            },
-            "2": {
-                "id": 2,
-                "value": 129
+                "value": 9
             }
         },
         "3": {
             "1": {
                 "id": 3,
-                "value": 47
+                "value": 113
             },
             "2": {
                 "id": 3,
-                "value": 47
+                "value": 113
             }
         },
         "4": {
             "1": {
                 "id": 4,
-                "value": 237
+                "value": 183
             },
             "2": {
                 "id": 4,
-                "value": 237
-            }
-        },
-        "5": {
-            "1": {
-                "id": 5,
-                "value": 0
-            },
-            "2": {
-                "id": 5,
-                "value": 0
+                "value": 183
             }
         },
         "6": {
             "1": {
                 "id": 6,
-                "value": 30
-            },
-            "2": {
-                "id": 6,
-                "value": 30
-            }
-        },
-        "7": {
-            "1": {
-                "id": 7,
                 "value": 94
             },
             "2": {
-                "id": 7,
+                "id": 6,
                 "value": 94
             }
         },
         "8": {
             "1": {
                 "id": 8,
-                "value": 217
+                "value": 189
             },
             "2": {
                 "id": 8,
-                "value": 217
+                "value": 189
             }
         },
         "10": {
             "1": {
                 "id": 10,
-                "value": 95
+                "value": 217
             },
             "2": {
                 "id": 10,
-                "value": 95
+                "value": 217
             }
         },
-        "13": {
+        "12": {
             "1": {
-                "id": 13,
-                "value": 22
+                "id": 12,
+                "value": 229
             },
             "2": {
-                "id": 13,
-                "value": 22
+                "id": 12,
+                "value": 229
+            }
+        },
+        "15": {
+            "1": {
+                "id": 15,
+                "value": 122
+            },
+            "2": {
+                "id": 15,
+                "value": 122
+            }
+        },
+        "16": {
+            "1": {
+                "id": 16,
+                "value": 88
+            },
+            "2": {
+                "id": 16,
+                "value": 88
             }
         },
         "17": {
             "1": {
                 "id": 17,
-                "value": 223
+                "value": 195
             },
             "2": {
                 "id": 17,
-                "value": 223
+                "value": 195
+            }
+        },
+        "18": {
+            "1": {
+                "id": 18,
+                "value": 16
+            },
+            "2": {
+                "id": 18,
+                "value": 16
             }
         },
         "19": {
             "1": {
                 "id": 19,
-                "value": 224
+                "value": 97
             },
             "2": {
                 "id": 19,
-                "value": 224
+                "value": 97
             }
         },
         "20": {
             "1": {
                 "id": 20,
-                "value": 252
+                "value": 190
             },
             "2": {
                 "id": 20,
-                "value": 252
+                "value": 190
             }
         },
         "21": {
             "1": {
                 "id": 21,
-                "value": 149
+                "value": 144
             },
             "2": {
                 "id": 21,
-                "value": 149
+                "value": 144
             }
         },
         "22": {
             "1": {
                 "id": 22,
-                "value": 243
+                "value": 15
             },
             "2": {
                 "id": 22,
-                "value": 243
+                "value": 15
             }
         },
         "23": {
             "1": {
                 "id": 23,
-                "value": 254
+                "value": 151
             },
             "2": {
                 "id": 23,
-                "value": 254
+                "value": 151
             }
         },
         "24": {
             "1": {
                 "id": 24,
-                "value": 82
+                "value": 40
             },
             "2": {
                 "id": 24,
-                "value": 82
+                "value": 40
             }
         },
         "25": {
             "1": {
                 "id": 25,
-                "value": 147
+                "value": 204
             },
             "2": {
                 "id": 25,
-                "value": 147
+                "value": 204
+            }
+        },
+        "26": {
+            "1": {
+                "id": 26,
+                "value": 56
+            },
+            "2": {
+                "id": 26,
+                "value": 56
             }
         },
         "27": {
             "1": {
                 "id": 27,
-                "value": 157
+                "value": 251
             },
             "2": {
                 "id": 27,
-                "value": 157
+                "value": 251
             }
         },
         "28": {
             "1": {
                 "id": 28,
-                "value": 232
+                "value": 20
             },
             "2": {
                 "id": 28,
-                "value": 232
+                "value": 20
+            }
+        },
+        "29": {
+            "1": {
+                "id": 29,
+                "value": 84
+            },
+            "2": {
+                "id": 29,
+                "value": 84
             }
         },
         "30": {
             "1": {
                 "id": 30,
-                "value": 6
+                "value": 63
             },
             "2": {
                 "id": 30,
-                "value": 6
+                "value": 63
             }
         },
         "31": {
             "1": {
                 "id": 31,
-                "value": 6
-            },
-            "2": {
-                "id": 31,
-                "value": 6
-            }
-        },
-        "32": {
-            "1": {
-                "id": 32,
                 "value": 52
             },
             "2": {
-                "id": 32,
+                "id": 31,
                 "value": 52
             }
         },
         "33": {
             "1": {
                 "id": 33,
-                "value": 198
+                "value": 188
             },
             "2": {
                 "id": 33,
-                "value": 198
+                "value": 188
             }
         },
         "34": {
             "1": {
                 "id": 34,
-                "value": 68
+                "value": 238
             },
             "2": {
                 "id": 34,
-                "value": 68
+                "value": 238
+            }
+        },
+        "35": {
+            "1": {
+                "id": 35,
+                "value": 40
+            },
+            "2": {
+                "id": 35,
+                "value": 40
+            }
+        },
+        "37": {
+            "1": {
+                "id": 37,
+                "value": 83
+            },
+            "2": {
+                "id": 37,
+                "value": 83
+            }
+        },
+        "38": {
+            "1": {
+                "id": 38,
+                "value": 214
+            },
+            "2": {
+                "id": 38,
+                "value": 214
+            }
+        },
+        "39": {
+            "1": {
+                "id": 39,
+                "value": 7
+            },
+            "2": {
+                "id": 39,
+                "value": 7
+            }
+        },
+        "40": {
+            "1": {
+                "id": 40,
+                "value": 205
+            },
+            "2": {
+                "id": 40,
+                "value": 205
+            }
+        },
+        "41": {
+            "1": {
+                "id": 41,
+                "value": 169
+            },
+            "2": {
+                "id": 41,
+                "value": 169
+            }
+        },
+        "42": {
+            "1": {
+                "id": 42,
+                "value": 48
+            },
+            "2": {
+                "id": 42,
+                "value": 48
             }
         }
     },
@@ -267,74 +347,56 @@
         "body": {
             "name": "body",
             "develop": {
-                "size": 58
-            }
-        },
-        "skin": {
-            "name": "skin",
+                "size": 198
+            },
             "color": {
-                "red": 129,
-                "green": 47,
-                "blue": 237
-            }
+                "red": 9,
+                "green": 0,
+                "blue": 113
+            },
+            "sex": "male"
         },
-        "brain": {
-            "name": "brain",
-            "personality_depth": 30,
-            "personality": {
-                "cool": 217,
-                "naive": 0,
-                "confident": 95,
-                "shy": 0,
-                "playful": 0,
-                "serious": 22,
-                "stubborn": 0,
-                "loyal": 0,
-                "humble": 0,
-                "ambitious": 223,
-                "greedy": 0,
-                "lazy": 224,
-                "eccentric": 252,
-                "assertive": 149,
-                "passive": 254,
-                "apathetic": 82,
-                "impulsive": 147,
-                "skeptical": 0,
-                "trusting": 157,
-                "dreamy": 232,
-                "spontaneous": 0,
-                "gregarious": 6
+        "blood": {
+            "name": "blood",
+            "develop": {
+                "volume": 183
+            },
+            "temperature": 0,
+            "color": {
+                "red": 94,
+                "green": 0,
+                "blue": 189
             }
         },
         "limb": {
             "name": "limb",
             "develop": {
-                "amount": 6
+                "amount": 7
             },
             "function": {
-                "grab_strength": 52,
-                "walk_speed": 198,
-                "jump_height": 68
+                "grab_strength": 205,
+                "walk_speed": 169,
+                "jump_height": 48
             }
         }
     },
     "description": {
         "body": {
-            "size": "small (22.7%)"
+            "size": "huge (77.6%)",
+            "color": "navy (#090071)",
+            "sex": "male"
         },
-        "skin": {
-            "color": "blueviolet (#812fed)"
-        },
-        "brain": {
-            "personality_depth": "commonplace (30.0%)",
-            "personality": "passive"
+        "blood": {
+            "volume": "large (71.8%)",
+            "temperature": "varying temperature (0.0%)",
+            "color": "mediumblue (#5e00bd)"
         },
         "limb": {
-            "amount": "6",
+            "amount": "7",
             "function": {
-                "grab_strength": "mild (20.4%)",
-                "walk_speed": "swift (77.6%)",
-                "jump_height": "small (26.7%)"
+                "grab_strength": "formidable (80.4%)",
+                "walk_speed": "rapid (66.3%)",
+                "jump_height": "small (18.8%)"
             }
         }
     }

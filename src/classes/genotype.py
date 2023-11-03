@@ -1,4 +1,4 @@
-from random import choices
+from random import random
 from .config import Config
 from .gene_library import GeneLibrary
 from .haplotype import Haplotype
@@ -25,7 +25,7 @@ class Genotype:
         # Iterates all genes found in the gene library and randomly adds them with random values.
         for id, gene in genes.items():
             insertion_chance = config.get_setting("gene_insertion_chance")
-            insert = choices([True, False], [insertion_chance, 1 - insertion_chance])[0]
+            insert = random() < insertion_chance
             if insert or gene.mandatory:
                 loci[id] = Locus.generate_random(id, gene.min, gene.max, pure)
         return Genotype(loci)
@@ -49,7 +49,7 @@ class Genotype:
             differing_ids = ht1.get_differing_alleles(ht2)
             ht1_ids = set(ht1.get_alleles().keys())
             for id in differing_ids:
-                insert = choices([True, False], [duplicate_alleles_chance, 1 - duplicate_alleles_chance])[0]
+                insert = random() < duplicate_alleles_chance
                 if not insert:
                     continue
                 if id in ht1_ids:

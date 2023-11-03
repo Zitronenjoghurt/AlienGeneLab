@@ -97,7 +97,10 @@ class Part:
         green = color.get("green", 0)
         blue = color.get("blue", 0)
 
-        return get_closest_color(to_hex(red, green, blue))
+        color_hex = to_hex(red, green, blue)
+        color_name = get_closest_color(color_hex)
+
+        return color_name+f' ({color_hex})'
     
     def __handle_personality(self, personalities):
         config = Config.get_instance()

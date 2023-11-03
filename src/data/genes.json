@@ -65,7 +65,7 @@
         "max": 100,
         "part": "brain",
         "type": "personality_depth",
-        "effect": "value",
+        "effect": "",
         "code": "PRD",
         "mandatory": false
     },
@@ -324,7 +324,7 @@
         "min": 0,
         "max": 100,
         "part": "limb",
-        "type": "function_value",
+        "type": "function",
         "effect": "grab_strength",
         "code": "LMB_GRB",
         "mandatory": false
@@ -334,7 +334,7 @@
         "min": 0,
         "max": 100,
         "part": "limb",
-        "type": "function_value",
+        "type": "function",
         "effect": "walk_speed",
         "code": "LMB_WLK",
         "mandatory": false
@@ -344,7 +344,7 @@
         "min": 0,
         "max": 100,
         "part": "limb",
-        "type": "function_value",
+        "type": "function",
         "effect": "jump_height",
         "code": "LMB_JMP",
         "mandatory": false

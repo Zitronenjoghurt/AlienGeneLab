@@ -1,5 +1,4 @@
 import json
-from ..modules.part_type_handler import handle_part_type, extract_first_key, extract_first_value
 
 from .genotype import Genotype
 from .phenotype import Phenotype
@@ -47,27 +46,14 @@ class Alien:
     
     # Generates a description dictionary which is a representation of the aliens phenotype, just easier to read.
     def get_description(self) -> dict:
-        parts = list(self.get_phenotype_dict().keys())
+        parts = list(self.get_body_parts().values())
+        return { part.get_name() : part.to_description() for part in parts }
 
-        description = {}
-
-        # Iterate all parts found in the alien to check their properties.
-        for part_name in parts:
-            part_info = {}
-            part = self.get_part(part_name)
-            # Depending on the type of the property, different information will be added to the description.
-            for type_name in part:
-                value = part[type_name]
-                if type_name == 'develop':
-                    part_info[extract_first_key(value)] = extract_first_value(value)
-                else:
-                    part_info[type_name] = handle_part_type(part_name, part, type_name, value)
-            description[part_name] = part_info
-
-        return description
+    def get_body_parts(self) -> dict:
+        return self.phenotype.get_parts()
 
     def get_phenotype_dict(self) -> dict:
-        return self.phenotype.get_parts()
+        return self.phenotype.to_dict()
     
     def get_genotype_dict(self) -> dict:
         return self.genotype.to_dict()

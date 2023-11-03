@@ -1,7 +1,7 @@
 {
     "size": {
         "replacement": ["miniscule", "tiny", "small", "modest", "medium", "big", "large", "huge", "vast", "collossal"],
-        "keys": ["jump_height", "size"]
+        "keys": ["jump_height"]
     },
     "speed": {
         "replacement": ["stationary", "crawling", "slow", "moderate", "brisk", "fast", "rapid", "swift", "blazing", "lightning"],
@@ -10,5 +10,9 @@
     "strength": {
         "replacement": ["feeble", "weak", "mild", "adequate", "sturdy", "robust", "strong", "formidable", "powerful", "herculean"],
         "keys": ["grab_strength"]
+    },
+    "personality_depth": {
+        "replacement": ["superficial", "simple", "plain", "commonplace", "layered", "complex", "intricate", "profound", "multidimensional", "enigmatic"],
+        "keys": []
     }
 }

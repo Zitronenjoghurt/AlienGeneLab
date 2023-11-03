@@ -1,4 +1,5 @@
 from .gene_library import GeneLibrary
+from .part import Part
 
 # The phenotype decides how the alien will look like from the outside.
 # It transforms the raw information of the genotype for practical use.
@@ -16,10 +17,7 @@ class Phenotype:
         for gene in library.get_all_developing_genes().values():
             locus = genotype.get_locus(gene.id)
             if locus is not None:
-                parts[gene.part] = {}
-                if len(gene.effect) != 0:
-                    parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effect] = locus.get_dominant_value()
-
+                parts[gene.part] = Part(gene.part, gene.effect, locus.get_dominant_value())
 
         # Iterate all non-developing genes found in the library and check if they exist in the current genotype.
         # If a certain part is influenced but the developing gene of that part does not exist in the genotype
@@ -27,14 +25,20 @@ class Phenotype:
         existing_parts = list(parts.keys())
         for gene in library.get_all_non_developing_genes().values():
             if gene.part in existing_parts:
-                parts.setdefault(gene.part, {}).setdefault(gene.type, {})[gene.effect] = genotype.get_locus_value(gene.id)
+                parts[gene.part].add_value(gene.type, gene.effect, genotype.get_locus_value(gene.id))
 
         return Phenotype(parts)
     
     def get_parts(self) -> dict:
         return self.parts
     
-    def get_part(self, part) -> dict:
+    def get_part(self, part) -> Part:
         if not self.parts[part]:
             return None
         return self.parts[part]
+    
+    def to_dict(self) -> dict:
+        result = {}
+        for part_name, part in self.parts.items():
+            result[part_name] = part.__dict__
+        return result

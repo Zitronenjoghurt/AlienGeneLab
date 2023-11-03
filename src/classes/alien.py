@@ -32,6 +32,9 @@ class Alien:
     
     # Breed this alien with another to create an offspring.
     def breed(self, partner_alien):
+        if self.get_sex() == partner_alien.get_sex():
+            return None
+
         ht1 = self.get_random_haplotype()
         ht2 = partner_alien.get_random_haplotype()
 
@@ -85,3 +88,6 @@ class Alien:
             alleles.append(str(value) + library.get_gene_code(id))
         
         return ''.join(["("+allele+ ")" for allele in alleles])
+    
+    def get_sex(self):
+        return self.phenotype.get_sex()

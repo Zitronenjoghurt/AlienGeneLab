@@ -44,6 +44,9 @@ class Phenotype:
             return None
         return self.parts[part]
     
+    def get_sex(self) -> str:
+        return self.parts["body"].get_property_value("sex", None)
+    
     def to_dict(self) -> dict:
         result = {}
         for part_name, part in self.parts.items():

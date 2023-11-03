@@ -14,9 +14,10 @@ class Locus:
     # pure => if true, both alleles in the locus are the same
     def generate_random(id, min, max, pure=True):
         first_allele = Allele(id, randint(min, max))
-        second_allele = deepcopy(first_allele)
 
-        if not pure:
+        if pure:
+            second_allele = Allele(id, first_allele.get_value())
+        else:
             second_allele = Allele(id, randint(min, max))
         
         return Locus(first_allele, second_allele)

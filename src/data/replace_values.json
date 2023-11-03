@@ -1,18 +1,26 @@
 {
     "size": {
-        "replacement": ["miniscule", "tiny", "small", "modest", "medium", "big", "large", "huge", "vast", "collossal"],
-        "keys": ["jump_height"]
+        "keys": ["jump_height"],
+        "labels": ["miniscule", "tiny", "small", "modest", "medium", "big", "large", "huge", "vast", "collossal"],
+        "min_label": "none",
+        "max_label": "astronomical"
     },
     "speed": {
-        "replacement": ["stationary", "crawling", "slow", "moderate", "brisk", "fast", "rapid", "swift", "blazing", "lightning"],
-        "keys": ["walk_speed"]
+        "keys": ["walk_speed"],
+        "labels": ["stationary", "crawling", "slow", "moderate", "brisk", "fast", "rapid", "swift", "blazing", "lightning"],
+        "min_label": "none",
+        "max_label": "superluminal"
     },
     "strength": {
-        "replacement": ["feeble", "weak", "mild", "adequate", "sturdy", "robust", "strong", "formidable", "powerful", "herculean"],
-        "keys": ["grab_strength"]
+        "keys": ["grab_strength"],
+        "labels": ["feeble", "weak", "mild", "adequate", "sturdy", "robust", "strong", "formidable", "powerful", "herculean"],
+        "min_label": "none",
+        "max_label": "celestial"
     },
     "personality_depth": {
-        "replacement": ["superficial", "simple", "plain", "commonplace", "layered", "complex", "intricate", "profound", "multidimensional", "enigmatic"],
-        "keys": []
+        "keys": [],
+        "labels": ["superficial", "simple", "plain", "commonplace", "layered", "complex", "intricate", "profound", "multidimensional", "enigmatic"],
+        "min_label": "nonexistent",
+        "max_label": "cosmic"
     }
 }

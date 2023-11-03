@@ -11,7 +11,7 @@ with open(REPLACE_VALUES_FILE_PATH, 'r') as file:
 def find_key(key) -> list|None:
     for entry in REPLACE_VALUES.values():
           if key in entry['keys']:
-                return entry['replacement']
+                return entry
     return find_by_identifier(key)
 
 def find_by_identifier(key):
@@ -20,24 +20,31 @@ def find_by_identifier(key):
     if not entry:
         return None
     
-    return entry.get("replacement")
+    return entry
 
 def replace_from_key(key, value, min_val, max_val, show_percentage = False) -> str:
-    labels = find_key(key)
-    if not labels:
+    entry = find_key(key)
+    if not entry:
         return str(value)
     
-    return replace(value, min_val, max_val, labels, show_percentage)
+    return replace(value, min_val, max_val, entry, show_percentage)
 
-def replace(value, min_val, max_val, labels, show_percentage = False) -> str:
+def replace(value, min_val, max_val, entry, show_percentage = False) -> str:
     if value < min_val or value > max_val:
         return str(value)
     
-    segment_length = (max_val - min_val) / (len(labels) - 1)
-    index = int((value - min_val) / segment_length)
-    index = min(index, len(labels) - 1)
-
-    result = labels[index]
+    result = ""
+    if value == min_val:
+         result = entry.get("min_label")
+    elif value == max_val:
+         result = entry.get("max_label")
+    else:
+        labels = entry.get("labels")
+        segment_length = (max_val - min_val) / (len(labels) - 1)
+        index = round((value - min_val) / segment_length)
+        index = min(index, len(labels) - 1)
+        result = labels[index]
+    
     if show_percentage:
         percentage = round((value / max_val) * 100, 1)
         result += f' ({percentage}%)'

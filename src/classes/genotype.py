@@ -11,6 +11,7 @@ from ..modules.genetic_code import decode, encode, base4_sum, count_char
 class Genotype:
     def __init__(self, loci={}) -> None:
         self.loci = loci
+        self.code = encode(self.get_sequence())
 
     # Generates a random genotype used to create an alien.
     # pure => if true, the generated genotype will only have loci with 2 of the same alleles
@@ -77,9 +78,7 @@ class Genotype:
         return Genotype.from_sequence(sequence)
 
     def to_genetic_code(self):
-        sequence = self.get_sequence()
-
-        return encode(sequence)
+        return self.code
     
     def to_dict(self):
         result = {}

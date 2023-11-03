@@ -27,6 +27,13 @@ class Phenotype:
             if gene.part in existing_parts:
                 parts[gene.part].add_value(gene.type, gene.effect, genotype.get_locus_value(gene.id))
 
+        # other properties
+        genetic_sum = genotype.get_genetic_sum()
+        if genetic_sum % 2 == 0:
+            parts["body"].add_value("sex", "", "male")
+        else:
+            parts["body"].add_value("sex", "", "female")
+
         return Phenotype(parts)
     
     def get_parts(self) -> dict:

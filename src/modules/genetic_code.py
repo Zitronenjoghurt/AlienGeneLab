@@ -45,3 +45,11 @@ def from_base4(string: str) -> int:
         value += REVERSED_CODE[char] * (4 ** i)
     
     return value
+
+def base4_sum(string: str) -> int:
+    result = 0
+
+    for char in string:
+        result += CODE.get(char, 0)
+    
+    return result

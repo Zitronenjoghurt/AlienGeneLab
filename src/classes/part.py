@@ -66,8 +66,8 @@ class Part:
         
         if isinstance(value, int):
             return property, self.__handle_integer(property, value)
-
-        return None, None
+            
+        return property, value
     
     def __handle_dict(self, type, dict):
         result = {}

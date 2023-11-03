@@ -1,13 +1,6 @@
-import numpy as np
-
-# patch deprecated numpy asscalar
-def patch_asscalar(a):
-    return a.item()
-setattr(np, "asscalar", patch_asscalar)
-
+from scipy.spatial import KDTree
 from colormath.color_objects import sRGBColor, LabColor
 from colormath.color_conversions import convert_color
-from colormath.color_diff import delta_e_cie2000
 
 import json
 import os
@@ -15,31 +8,26 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 COLORS_FILE_PATH = os.path.join(current_dir, '..', 'data', 'colors.json')
 
+# Precompute Lab values
+with open(COLORS_FILE_PATH, 'r') as file:
+    color_data = json.load(file)
+    PRECOMPUTED_LAB_COLORS = {name: convert_color(sRGBColor.new_from_rgb_hex(value), LabColor) for value, name in color_data.items()}
+
+# Convert the Lab colors to a list of tuples for KDTree
+lab_values = [color.get_value_tuple() for color in PRECOMPUTED_LAB_COLORS.values()]
+color_names = list(PRECOMPUTED_LAB_COLORS.keys())
+
+# Build a KDTree with Lab values
+lab_kdtree = KDTree(lab_values)
+
+def get_closest_color(rgb):
+    input_rgb = sRGBColor(rgb[0], rgb[1], rgb[2], is_upscaled=True)
+    input_lab = convert_color(input_rgb, LabColor)
+    input_lab_tuple = input_lab.get_value_tuple()
+
+    # Query the KDTree for the closest color
+    distance, index = lab_kdtree.query(input_lab_tuple)
+    return color_names[index]
+
 def to_hex(r, g, b):
     return "#{:02x}{:02x}{:02x}".format(r, g, b)
-
-def get_closest_color(hex):
-    colors = None
-    with open(COLORS_FILE_PATH, 'r') as file:
-        colors = json.load(file)
-    
-    differences = []
-    for value, name in colors.items():
-        differences.append((name, color_difference(hex, value)))
-    
-    return min(differences, key = lambda x: x[1])[0]
-
-def color_difference(hex1, hex2):
-    # Convert HEX to RGB
-    rgb1 = sRGBColor.new_from_rgb_hex(hex1)
-    rgb2 = sRGBColor.new_from_rgb_hex(hex2)
-    
-    # Convert RGB to Lab Color Space (needed for Delta E calculation)
-    lab1 = convert_color(rgb1, LabColor)
-    lab2 = convert_color(rgb2, LabColor)
-    
-    # Calculate Delta E
-    delta_e = delta_e_cie2000(lab1, lab2)
-    
-    # The smaller, the smaller the color difference
-    return delta_e

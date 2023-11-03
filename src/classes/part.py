@@ -98,7 +98,7 @@ class Part:
         blue = color.get("blue", 0)
 
         color_hex = to_hex(red, green, blue)
-        color_name = get_closest_color(color_hex)
+        color_name = get_closest_color([red, green, blue])
 
         return color_name+f' ({color_hex})'
     

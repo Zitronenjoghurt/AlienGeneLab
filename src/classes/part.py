@@ -5,7 +5,7 @@ from .gene_library import GeneLibrary
 
 # A body part included in the phenotype of an alien
 class Part:
-    def __init__(self, name, developing_value_type, developing_value) -> None:
+    def __init__(self, name: str, developing_value_type: str, developing_value) -> None:
         self.name = name
         if len(developing_value_type) != 0:
             self.develop = {}
@@ -16,7 +16,7 @@ class Part:
             return self.__dict__ == __value.__dict__
         return False
 
-    def add_value(self, type, effect, value):
+    def add_value(self, type: str, effect: str, value) -> None:
         if len(effect) == 0:
             setattr(self, type, value)
             return
@@ -31,13 +31,13 @@ class Part:
     def get_name(self) -> str:
         return self.name
 
-    def get_properties(self):
+    def get_properties(self) -> list:
         return list(self.__dict__.keys())
     
-    def get_property_value(self, property, default = None):
+    def get_property_value(self, property: str, default = None) -> object:
         return getattr(self, property, default)
 
-    def to_description(self):
+    def to_description(self) -> dict:
         properties = self.get_properties()
         
         description = {}
@@ -48,7 +48,7 @@ class Part:
         
         return description
 
-    def __handle_property(self, property):
+    def __handle_property(self, property: str) -> tuple:
         value = self.get_property_value(property)
         
         match property:
@@ -71,7 +71,7 @@ class Part:
             
         return property, value
     
-    def __handle_dict(self, type, dict):
+    def __handle_dict(self, type: str, dict: dict) -> dict:
         result = {}
         for effect, value in dict.items():
             if isinstance(value, int):
@@ -80,7 +80,7 @@ class Part:
                 result[effect] = value
         return result
 
-    def __handle_integer(self, type, value, effect = ""):
+    def __handle_integer(self, type: str, value, effect: str = ""):
         library = GeneLibrary.get_instance()
         gene = library.find_gene(self.name, type, effect)
 
@@ -94,7 +94,7 @@ class Part:
         return replace_from_key(key, value, gene.min, gene.max, True)
 
     
-    def __handle_color(self, color):
+    def __handle_color(self, color: dict) -> str:
         red = color.get("red", 0)
         green = color.get("green", 0)
         blue = color.get("blue", 0)
@@ -104,7 +104,7 @@ class Part:
 
         return color_name+f' ({color_hex})'
     
-    def __handle_personality(self, personalities):
+    def __handle_personality(self, personalities: dict) -> str:
         config = Config.get_instance()
         expression = config.get_personality_expression()
         personality_depth = self.get_property_value("personality_depth", 0)
@@ -123,7 +123,7 @@ class Part:
 
         return ', '.join(list(personalities.keys())[:personality_count])
     
-    def __handle_develop(self, dict: dict):
+    def __handle_develop(self, dict: dict) -> tuple:
         effect, value = next(iter(dict.items()))
 
         if isinstance(value, int):
@@ -131,7 +131,7 @@ class Part:
         
         return effect, value
     
-    def __handle_texture(self, textures):
+    def __handle_texture(self, textures: dict) -> str:
         # Sort textures
         textures = {texture: value for texture, value in sorted(textures.items(), key=lambda item: item[1], reverse=True)}
 

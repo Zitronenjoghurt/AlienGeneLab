@@ -16,14 +16,14 @@ class Config:
             for setting in configurations:
                 self.settings[setting[0]] = setting[1]
 
-    def get_instance():
+    def get_instance() -> 'Config':
         if Config.__instance is None:
             Config.__instance = Config()
         return Config.__instance
 
-    def get_setting(self, setting):
+    def get_setting(self, setting: str):
         return self.settings[setting]
     
-    def get_personality_expression(self):
+    def get_personality_expression(self) -> dict:
         setting = self.get_setting('personality_expression')
         return {int(key): int(value) for key, value in setting.items()}

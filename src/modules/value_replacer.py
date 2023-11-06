@@ -8,13 +8,13 @@ REPLACE_VALUES = None
 with open(REPLACE_VALUES_FILE_PATH, 'r') as file:
         REPLACE_VALUES = json.load(file)
 
-def find_key(key) -> list|None:
+def find_key(key: str) -> dict|None:
     for entry in REPLACE_VALUES.values():
           if key in entry['keys']:
                 return entry
     return find_by_identifier(key)
 
-def find_by_identifier(key):
+def find_by_identifier(key: str) -> dict|None:
     entry = REPLACE_VALUES.get(key, None)
 
     if not entry:
@@ -22,14 +22,14 @@ def find_by_identifier(key):
     
     return entry
 
-def replace_from_key(key, value, min_val, max_val, show_percentage = False) -> str:
+def replace_from_key(key: str, value: int, min_val: int, max_val: int, show_percentage: bool = False) -> str:
     entry = find_key(key)
     if not entry:
         return str(value)
     
     return replace(value, min_val, max_val, entry, show_percentage)
 
-def replace(value, min_val, max_val, entry, show_percentage = False) -> str:
+def replace(value: int, min_val: int, max_val: int, entry: dict, show_percentage: bool = False) -> str:
     if value < min_val or value > max_val:
         return str(value)
     

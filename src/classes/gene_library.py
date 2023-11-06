@@ -17,15 +17,15 @@ class GeneLibrary:
                 gene = Gene.from_dict(id, gene_data)
                 self.library[id] = gene
 
-    def get_instance():
+    def get_instance() -> 'GeneLibrary':
         if GeneLibrary.__instance is None:
             GeneLibrary.__instance = GeneLibrary()
         return GeneLibrary.__instance
     
-    def get_gene(self, id) -> Gene:
+    def get_gene(self, id: int) -> Gene:
         return self.library.get(id, None)
     
-    def find_gene(self, part, type, effect) -> Gene|None:
+    def find_gene(self, part: str, type: str, effect: str) -> Gene|None:
         results = [entry for entry in self.library.values() if entry.part == part and entry.type == type and entry.effect == effect]
 
         if len(results) == 0:
@@ -33,7 +33,7 @@ class GeneLibrary:
         
         return results[0]
     
-    def find_gene_without_type(self, part, effect) -> Gene|None:
+    def find_gene_without_type(self, part: str, effect: str) -> Gene|None:
         results = [entry for entry in self.library.values() if entry.part == part and entry.effect == effect]
 
         if len(results) == 0:
@@ -41,7 +41,7 @@ class GeneLibrary:
         
         return results[0]
     
-    def get_gene_code(self, id) -> str:
+    def get_gene_code(self, id: int) -> str:
         gene = self.get_gene(id)
 
         if not gene:

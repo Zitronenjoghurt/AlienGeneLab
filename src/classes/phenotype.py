@@ -1,13 +1,14 @@
 from .gene_library import GeneLibrary
+from .genotype import Genotype
 from .part import Part
 
 # The phenotype decides how the alien will look like from the outside.
 # It transforms the raw information of the genotype for practical use.
 class Phenotype:
-    def __init__(self, parts={}) -> None:
+    def __init__(self, parts: dict = {}) -> None:
         self.parts = parts
 
-    def generate_from_genotype(genotype):
+    def generate_from_genotype(genotype: Genotype) -> 'Phenotype':
         library = GeneLibrary.get_instance()
 
         parts = {}
@@ -39,10 +40,8 @@ class Phenotype:
     def get_parts(self) -> dict:
         return self.parts
     
-    def get_part(self, part) -> Part:
-        if not self.parts[part]:
-            return None
-        return self.parts[part]
+    def get_part(self, part: str) -> Part:
+        return self.parts.get(part, None)
     
     def get_sex(self) -> str:
         return self.parts["body"].get_property_value("sex", None)

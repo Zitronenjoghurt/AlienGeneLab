@@ -9,13 +9,13 @@ from ..modules.genetic_code import decode, encode, base4_sum, count_char
 # The genotype of an alien is made up of multiple loci,
 # where each locus decides a different property of a body part.
 class Genotype:
-    def __init__(self, loci={}) -> None:
+    def __init__(self, loci: dict = {}) -> None:
         self.loci = loci
         self.code = encode(self.get_sequence())
 
     # Generates a random genotype used to create an alien.
     # pure => if true, the generated genotype will only have loci with 2 of the same alleles
-    def generate_random(pure=True):
+    def generate_random(pure: bool = True) -> 'Genotype':
         config = Config.get_instance()
         library = GeneLibrary.get_instance()
         genes = library.get_all_genes()
@@ -31,7 +31,7 @@ class Genotype:
         return Genotype(loci)
     
     # Fuses two haplotypes (one from each parent) and fuses them to a new genotype.
-    def generate_from_haplotypes(ht1, ht2):
+    def generate_from_haplotypes(ht1: Haplotype, ht2: Haplotype) -> 'Genotype':
         config = Config.get_instance()
         duplicate_alleles = config.get_setting("duplicate_differing_alleles")
         duplicate_alleles_chance = config.get_setting("duplicate_differing_alleles_chance")
@@ -59,7 +59,7 @@ class Genotype:
 
         return Genotype(loci)
     
-    def from_sequence(sequence):
+    def from_sequence(sequence: list) -> 'Genotype':
         loci = {}
         for i in range(0, len(sequence), 6):
             allele_sequence = sequence[i:i+6]
@@ -72,24 +72,24 @@ class Genotype:
 
         return Genotype(loci)
 
-    def from_genetic_code(code):
+    def from_genetic_code(code: str) -> 'Genotype':
         sequence = decode(code)
 
         return Genotype.from_sequence(sequence)
 
-    def to_genetic_code(self):
+    def to_genetic_code(self) -> str:
         return self.code
     
-    def to_dict(self):
+    def to_dict(self) -> dict:
         result = {}
         for id, locus in self.loci.items():
             result[str(id)] = locus.to_dict()
         return result
 
-    def get_locus(self, id):
+    def get_locus(self, id: int) -> Locus:
         return self.loci.get(id, None)
 
-    def get_locus_value(self, id):
+    def get_locus_value(self, id: int) -> int:
         locus = self.get_locus(id)
 
         if not locus:
@@ -98,7 +98,7 @@ class Genotype:
         return locus.get_dominant_value()
     
     # Splits the allele pairs inside every loci of the genotype into a sequence of just alleles.
-    def get_random_haplotype(self):
+    def get_random_haplotype(self) -> Haplotype:
         alleles = {}
 
         for id, locus in self.loci.items():
@@ -106,7 +106,7 @@ class Genotype:
 
         return Haplotype(alleles)
     
-    def get_sequence(self):
+    def get_sequence(self) -> list:
         sequence = []
 
         for locus in self.loci.values():
@@ -114,11 +114,11 @@ class Genotype:
 
         return sequence
     
-    def get_genetic_sum(self):
+    def get_genetic_sum(self) -> int:
         genetic_code = self.to_genetic_code()
         return base4_sum(genetic_code)
     
-    def get_sex_defining_value(self):
+    def get_sex_defining_value(self) -> int:
         genetic_code = self.to_genetic_code()
         count_A = count_char(genetic_code, "A")
         count_T = count_char(genetic_code, "T")

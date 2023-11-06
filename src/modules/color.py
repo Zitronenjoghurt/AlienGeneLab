@@ -20,7 +20,7 @@ color_names = list(PRECOMPUTED_LAB_COLORS.keys())
 # Build a KDTree with Lab values
 lab_kdtree = KDTree(lab_values)
 
-def get_closest_color(rgb):
+def get_closest_color(rgb : list) -> str:
     input_rgb = sRGBColor(rgb[0], rgb[1], rgb[2], is_upscaled=True)
     input_lab = convert_color(input_rgb, LabColor)
     input_lab_tuple = input_lab.get_value_tuple()
@@ -29,5 +29,5 @@ def get_closest_color(rgb):
     distance, index = lab_kdtree.query(input_lab_tuple)
     return color_names[index]
 
-def to_hex(r, g, b):
+def to_hex(r: int, g: int, b: int) -> str:
     return "#{:02x}{:02x}{:02x}".format(r, g, b)

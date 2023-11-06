@@ -4,12 +4,12 @@ from ..modules.some_maths import limit_between
 # Alleles are found in pairs in loci.
 # The dominant of the two alleles decides the value of the locus.
 class Allele:
-    def __init__(self, id, value, dominance) -> None:
+    def __init__(self, id: int, value: int, dominance: int) -> None:
         self.id = id
         self.value = value
         self.dominance = dominance
 
-    def from_sequence(sequence):
+    def from_sequence(sequence: list) -> 'Allele':
         library = GeneLibrary.get_instance()
 
         id = sequence[2]
@@ -24,17 +24,17 @@ class Allele:
 
         return Allele(id, value, dominance)
 
-    def get_id(self):
+    def get_id(self) -> int:
         return self.id
     
-    def get_value(self):
+    def get_value(self) -> int:
         return self.value
     
-    def get_dominance(self):
+    def get_dominance(self) -> int:
         return self.dominance
     
-    def get_sequence(self):
+    def get_sequence(self) -> list:
         return [self.dominance, self.value, self.id]
     
-    def to_dict(self):
+    def to_dict(self) -> dict:
         return {"id": self.id, "value": self.value, "dominance": self.dominance}

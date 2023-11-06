@@ -46,5 +46,23 @@
         "labels": ["tiny", "short", "modest", "medium", "considerable", "long", "lengthy", "extended", "gigantic", "insanely long"],
         "min_label": "none",
         "max_label": "immense"
+    },
+    "sensitivity": {
+        "keys": [],
+        "labels": ["numb", "dull", "slight", "perceptive", "sensitive", "responsive", "reactive", "susceptible", "very sensitive", "hypersensitive"],
+        "min_label": "none",
+        "max_label": "excruciatingly sensitive"
+    },
+    "thickness": {
+        "keys": [],
+        "labels": ["paper-thin", "slender", "fine", "thin", "medium", "thick", "bulky", "heavy", "robust", "massive"],
+        "min_label": "filamentary",
+        "max_label": "fortified"
+    },
+    "intelligence": {
+        "keys": [],
+        "labels": ["very stupid", "stupid", "aware", "below-average", "average", "intelligent", "brilliant", "genius", "mastermind"],
+        "min_label": "none",
+        "max_label": "omnisenct"
     }
 }

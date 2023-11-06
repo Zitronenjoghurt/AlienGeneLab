@@ -6,3 +6,4 @@ __pycache__
 alien.json
 test_utils.py
 test.json
+alien*.json

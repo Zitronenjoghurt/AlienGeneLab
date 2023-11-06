@@ -61,9 +61,9 @@ class Genotype:
     
     def from_sequence(sequence):
         loci = {}
-        for i in range(0, len(sequence), 4):
-            allele_sequence = sequence[i:i+4]
-            if len(allele_sequence) < 4:
+        for i in range(0, len(sequence), 6):
+            allele_sequence = sequence[i:i+6]
+            if len(allele_sequence) < 6:
                 break
 
             locus = Locus.from_sequence(allele_sequence)

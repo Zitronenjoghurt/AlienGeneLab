@@ -85,10 +85,11 @@ class Alien:
         sequence = self.genotype.get_sequence()
         
         alleles = []
-        for i in range (0, len(sequence), 2):
-            value = sequence[i]
-            id = sequence[i+1]
-            alleles.append(str(value) + library.get_gene_code(id))
+        for i in range (0, len(sequence), 3):
+            dominance = sequence[i]
+            value = sequence[i+1]
+            id = sequence[i+2]
+            alleles.append(str(dominance) + "!" +str(value) + library.get_gene_code(id))
         
         return ''.join(["("+allele+ ")" for allele in alleles])
     

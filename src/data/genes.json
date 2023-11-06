@@ -41,7 +41,7 @@
     },
     {
         "description": "Decides if the alien develops blood.",
-        "min": 1,
+        "min": 0,
         "max": 255,
         "part": "blood",
         "type": "develop",
@@ -161,7 +161,7 @@
     },
     {
         "description": "The length of the hair.",
-        "min": 1,
+        "min": 0,
         "max": 255,
         "part": "hair",
         "type": "length",

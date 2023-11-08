@@ -34,6 +34,10 @@ class Alien:
     def get_genetic_code(self) -> str:
         return self.genotype.to_genetic_code()
     
+    def mutate(self, chance: float = 0.5) -> None:
+        self.genotype = self.genotype.mutate(chance)
+        self.phenotype = Phenotype.generate_from_genotype(self.genotype)
+
     # Breed this alien with another to create an offspring.
     def breed(self, partner_alien: 'Alien', ignore_sex: bool = False) -> 'Alien':
         if not ignore_sex and self.get_sex() == partner_alien.get_sex():

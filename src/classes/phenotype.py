@@ -29,11 +29,12 @@ class Phenotype:
                 parts[gene.part].add_value(gene.type, gene.effect, genotype.get_locus_value(gene.id))
 
         # other properties
-        sex_defining_value = genotype.get_sex_defining_value()
-        if sex_defining_value % 2 == 0:
-            parts["body"].add_value("sex", "", "male")
-        else:
-            parts["body"].add_value("sex", "", "female")
+        if parts.get("body") is not None:
+            sex_defining_value = genotype.get_sex_defining_value()
+            if sex_defining_value % 2 == 0:
+                parts["body"].add_value("sex", "", "male")
+            else:
+                parts["body"].add_value("sex", "", "female")
 
         return Phenotype(parts)
     
@@ -43,8 +44,9 @@ class Phenotype:
     def get_part(self, part: str) -> Part:
         return self.parts.get(part, None)
     
-    def get_sex(self) -> str:
-        return self.parts["body"].get_property_value("sex", None)
+    def get_sex(self) -> str|None:
+        if self.parts.get("body") is not None:
+            return self.parts["body"].get_property_value("sex", None)
     
     def to_dict(self) -> dict:
         result = {}

@@ -1,4 +1,4 @@
-import numpy as np
+from random import random, choice
 
 # Configuration
 CODE_LENGTH = 4
@@ -6,7 +6,7 @@ CODE = {0: 'A', 1: 'G', 2: 'C', 3: 'T'}
 
 # Precalculation
 REVERSED_CODE = {value: key for key, value in CODE.items()}
-INDICES = np.array(list(CODE.keys()))
+INDICES = list(CODE.keys())
 VALUES = set(CODE.values())
 
 def encode(values: list) -> str:
@@ -58,19 +58,14 @@ def base4_sum(string: str) -> int:
     return result
 
 def count_char(string: str, char: str) -> int:
-    result = 0
-
-    for character in string:
-        if character == char:
-            result += 1
-
-    return result
+    return string.count(char)
 
 # chance between 0 and 1
 def flip_code(code: str, chance: float) -> str:
-    result = [flip_char(char) if np.random.rand() < chance else char for char in code]
+    result = [flip_char(char) if random() < chance else char for char in code]
     return ''.join(result)
 
 def flip_char(char: str) -> str:
-    indices = INDICES[INDICES != REVERSED_CODE[char]]
-    return CODE[np.random.choice(indices)]
+    forbidden_index = REVERSED_CODE[char]
+    indices = [index for index in INDICES if index != forbidden_index]
+    return CODE[choice(indices)]

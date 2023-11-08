@@ -1,4 +1,3 @@
-from copy import deepcopy
 from random import randint, choice
 
 from .allele import Allele
